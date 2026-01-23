@@ -1,3 +1,6 @@
+# Robots.txt for BA Attitude
+# https://baattitude.fr
+
 User-agent: Googlebot
 Allow: /
 
@@ -12,3 +15,10 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Sitemaps
+Sitemap: https://baattitude.fr/sitemap.xml
+Sitemap: https://baattitude.fr/sitemap-images.xml
+
+# Crawl-delay pour éviter la surcharge
+Crawl-delay: 1

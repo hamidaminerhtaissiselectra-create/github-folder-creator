@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Page d'accueil avec images -->
+  <url>
+    <loc>https://baattitude.fr/</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/og-image.jpg</image:loc>
+      <image:title>BA Attitude - Prestations techniques événementielles</image:title>
+      <image:caption>Spécialiste des salons professionnels et événements B2B en France</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Page Services -->
+  <url>
+    <loc>https://baattitude.fr/services</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/hero-salon-professionnel.jpg</image:loc>
+      <image:title>Services de prestations techniques pour salons</image:title>
+      <image:caption>Montage de stands, logistique événementielle, support technique</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Réalisations -->
+  <url>
+    <loc>https://baattitude.fr/realisations</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/realisation-gala-dior.jpg</image:loc>
+      <image:title>Réalisation Gala DIOR par BA Attitude</image:title>
+      <image:caption>Décoration complète pour le gala annuel de la maison DIOR</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/realisation-bvlgari-launch.jpg</image:loc>
+      <image:title>Lancement produit BVLGARI</image:title>
+      <image:caption>Scénographie immersive pour le lancement d'une nouvelle collection</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/realisation-google-convention.jpg</image:loc>
+      <image:title>Convention internationale GOOGLE</image:title>
+      <image:caption>Aménagement et décoration de l'espace convention</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Réalisation DIOR -->
+  <url>
+    <loc>https://baattitude.fr/realisations/1</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/realisation-gala-dior.jpg</image:loc>
+      <image:title>Gala Annuel DIOR - BA Attitude</image:title>
+      <image:caption>Décoration événementielle luxe pour gala DIOR au Palais de Tokyo Paris</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Réalisation BVLGARI -->
+  <url>
+    <loc>https://baattitude.fr/realisations/2</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/realisation-bvlgari-launch.jpg</image:loc>
+      <image:title>Lancement Produit BVLGARI - BA Attitude</image:title>
+      <image:caption>Scénographie immersive à Rome pour lancement collection BVLGARI</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Réalisation GOOGLE -->
+  <url>
+    <loc>https://baattitude.fr/realisations/3</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/realisation-google-convention.jpg</image:loc>
+      <image:title>Convention Internationale GOOGLE - BA Attitude</image:title>
+      <image:caption>Aménagement convention 5000m² Dublin pour GOOGLE</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Blog avec images -->
+  <url>
+    <loc>https://baattitude.fr/blog</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/salon-professionnel-vue-ensemble.jpg</image:loc>
+      <image:title>Blog BA Attitude - Conseils événementiels</image:title>
+      <image:caption>Articles et conseils pour vos salons professionnels</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Article Blog 1 -->
+  <url>
+    <loc>https://baattitude.fr/blog/organisation-technique-salon-professionnel</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/salon-professionnel-vue-ensemble.jpg</image:loc>
+      <image:title>Organisation technique salon professionnel</image:title>
+      <image:caption>Guide complet pour réussir votre participation à un salon B2B</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Article Blog 2 -->
+  <url>
+    <loc>https://baattitude.fr/blog/logistique-evenementielle-internationale</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/evenement-international-conference.jpg</image:loc>
+      <image:title>Logistique événementielle internationale</image:title>
+      <image:caption>Conseils pour organiser un événement à l'international</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Article Blog 3 -->
+  <url>
+    <loc>https://baattitude.fr/blog/montage-demontage-stands-bonnes-pratiques</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/montage-stand-salon-paris.jpg</image:loc>
+      <image:title>Montage et démontage de stands</image:title>
+      <image:caption>Bonnes pratiques pour optimiser vos montages de stands</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- À propos -->
+  <url>
+    <loc>https://baattitude.fr/a-propos</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/about-team.jpg</image:loc>
+      <image:title>Équipe BA Attitude</image:title>
+      <image:caption>15 ans d'expertise en prestations événementielles</image:caption>
+    </image:image>
+  </url>
+  
+</urlset>
