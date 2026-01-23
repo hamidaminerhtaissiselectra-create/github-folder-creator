@@ -1,30 +1,118 @@
 {
-  "name": "BA ATTITUDE - Prestations Événementielles",
+  "name": "BA ATTITUDE - Prestations Techniques Salons Professionnels",
   "short_name": "BA ATTITUDE",
-  "description": "Spécialiste des salons professionnels, foires et expositions B2B en France et à l'international",
+  "description": "Spécialiste du montage de stands et prestations techniques pour salons professionnels, foires et événements B2B en France et à l'international. Devis gratuit sous 48h.",
   "start_url": "/",
+  "id": "/",
+  "scope": "/",
   "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "browser"],
   "background_color": "#0a0a0a",
   "theme_color": "#b8860b",
   "orientation": "portrait-primary",
   "lang": "fr-FR",
-  "scope": "/",
-  "id": "/",
+  "dir": "ltr",
+  "categories": ["business", "events", "productivity", "lifestyle"],
+  "iarc_rating_id": "",
+  "prefer_related_applications": false,
   "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "/favicon.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/favicon.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
-  "categories": ["business", "events", "productivity"],
-  "screenshots": [],
-  "prefer_related_applications": false
+  "shortcuts": [
+    {
+      "name": "Demander un devis",
+      "short_name": "Devis",
+      "description": "Obtenez un devis gratuit pour votre salon professionnel",
+      "url": "/contact",
+      "icons": [{"src": "/favicon.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "Nos services",
+      "short_name": "Services",
+      "description": "Découvrez nos prestations techniques événementielles",
+      "url": "/services",
+      "icons": [{"src": "/favicon.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "Nos réalisations",
+      "short_name": "Réalisations",
+      "description": "Parcourez notre portfolio de projets",
+      "url": "/realisations",
+      "icons": [{"src": "/favicon.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "Zones d'intervention",
+      "short_name": "Zones",
+      "description": "Nos zones d'intervention en France et à l'international",
+      "url": "/zones-intervention",
+      "icons": [{"src": "/favicon.png", "sizes": "192x192"}]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.jpg",
+      "sizes": "1200x630",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Page d'accueil BA ATTITUDE"
+    }
+  ],
+  "related_applications": [],
+  "handle_links": "preferred",
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "auto"]
+  }
 }
