@@ -1,11 +1,91 @@
 # Robots.txt for BA Attitude
 # https://baattitude.fr
+# Optimized for Search Engines & AI Crawlers (2025)
+
+# ===========================================
+# SEARCH ENGINES
+# ===========================================
 
 User-agent: Googlebot
 Allow: /
+Disallow: /api/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /api/
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# ===========================================
+# AI CRAWLERS & LLM SYSTEMS
+# ===========================================
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic Claude
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Google AI (Gemini, Bard)
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# Common Crawl (used by many AI systems)
+User-agent: CCBot
+Allow: /
+
+# You.com AI
+User-agent: YouBot
+Allow: /
+
+# Apple (Siri, Spotlight)
+User-agent: Applebot
+Allow: /
+
+# Amazon Alexa
+User-agent: Amazonbot
+Allow: /
+
+# ===========================================
+# SOCIAL MEDIA CRAWLERS
+# ===========================================
 
 User-agent: Twitterbot
 Allow: /
@@ -13,12 +93,40 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
+User-agent: LinkedInBot
 Allow: /
 
-# Sitemaps
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# ===========================================
+# DEFAULT RULE
+# ===========================================
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /*.json$
+
+# ===========================================
+# SITEMAPS
+# ===========================================
+
 Sitemap: https://baattitude.fr/sitemap.xml
 Sitemap: https://baattitude.fr/sitemap-images.xml
 
-# Crawl-delay pour éviter la surcharge
+# ===========================================
+# CRAWL OPTIMIZATION
+# ===========================================
+
+# Crawl-delay for respectful crawling
 Crawl-delay: 1
+
+# Host directive
+Host: https://baattitude.fr

@@ -9,9 +9,9 @@ export default function NotFound() {
   return (
     <Layout>
       <SEOHead
-        title="Page non trouvée | BA ATTITUDE"
-        description="La page que vous recherchez n'existe pas ou a été déplacée. Retournez à l'accueil pour découvrir nos services événementiels."
-        canonical="https://baattitude.fr/404"
+        title="Page non trouvée (404) | BA ATTITUDE - Prestataire Événementiel"
+        description="La page que vous recherchez n'existe pas ou a été déplacée. Découvrez nos services de montage de stands et prestations techniques pour salons professionnels."
+        noindex={true}
       />
       <section className="min-h-[80vh] flex items-center justify-center bg-background">
         <div className="container mx-auto px-4 text-center">

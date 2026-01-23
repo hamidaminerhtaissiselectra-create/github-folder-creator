@@ -29,13 +29,13 @@ export function LocalBusinessSchema({
   telephone = "+33601591920",
   email = "contact@baattitude.fr",
   address = {
-    streetAddress: "Paris",
-    addressLocality: "Paris",
-    postalCode: "75000",
+    streetAddress: "16 Rue des Pendants",
+    addressLocality: "Pontault-Combault",
+    postalCode: "77340",
     addressCountry: "FR"
   },
   url = "https://baattitude.fr",
-  logo = "https://baattitude.fr/logo.png",
+  logo = "https://baattitude.fr/favicon.png",
   priceRange = "€€€",
   openingHours = ["Mo-Fr 08:00-19:00", "Sa 09:00-17:00"],
   areaServed = ["France", "Europe", "International"],
@@ -44,30 +44,56 @@ export function LocalBusinessSchema({
     "Démontage de stands",
     "Logistique événementielle",
     "Coordination terrain salons professionnels",
-    "Support technique événementiel"
+    "Support technique événementiel",
+    "Scénographie événementielle"
   ]
 }: LocalBusinessProps) {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "EventVenue", "ProfessionalService"],
     "@id": `${url}/#organization`,
     name,
     description,
     telephone,
     email,
     url,
-    logo,
+    logo: {
+      "@type": "ImageObject",
+      url: logo,
+      width: 512,
+      height: 512
+    },
+    image: "https://baattitude.fr/og-image.jpg",
     priceRange,
+    currenciesAccepted: "EUR",
+    paymentAccepted: "Virement bancaire, Chèque, Carte bancaire",
     address: {
       "@type": "PostalAddress",
-      ...address
+      streetAddress: address.streetAddress,
+      addressLocality: address.addressLocality,
+      postalCode: address.postalCode,
+      addressRegion: "Île-de-France",
+      addressCountry: address.addressCountry
     },
-    openingHoursSpecification: openingHours.map(hours => ({
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: hours.split(" ")[0],
-      opens: hours.split(" ")[1]?.split("-")[0],
-      closes: hours.split(" ")[1]?.split("-")[1]
-    })),
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 48.8034,
+      longitude: 2.6061
+    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "09:00",
+        closes: "17:00"
+      }
+    ],
     areaServed: areaServed.map(area => ({
       "@type": "Place",
       name: area
@@ -80,13 +106,51 @@ export function LocalBusinessSchema({
         "@id": `${url}/#service-${index}`,
         itemOffered: {
           "@type": "Service",
-          name: service
+          name: service,
+          provider: {
+            "@type": "Organization",
+            name: "BA Attitude"
+          }
         }
       }))
     },
     sameAs: [
-      "https://www.linkedin.com/company/baattitude",
-      "https://www.instagram.com/baattitude"
+      "https://www.linkedin.com/company/ba-attitude",
+      "https://www.instagram.com/baattitude.events",
+      "https://www.facebook.com/baattitude.events"
+    ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      ratingCount: "127",
+      bestRating: "5",
+      worstRating: "1"
+    },
+    review: [
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Marie Dubois"
+        },
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5"
+        },
+        reviewBody: "BA ATTITUDE est notre partenaire technique depuis 8 ans. Leur réactivité et leur professionnalisme nous permettent d'aborder chaque salon en toute sérénité."
+      },
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Philippe Martin"
+        },
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5"
+        },
+        reviewBody: "Équipe professionnelle et réactive. Montage parfait de notre stand de 200m² en moins de 48h."
+      }
     ]
   };
 

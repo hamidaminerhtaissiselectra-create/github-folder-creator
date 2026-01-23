@@ -49,7 +49,7 @@ export function OrganizationSchema() {
     url: "https://baattitude.fr",
     logo: {
       "@type": "ImageObject",
-      url: "https://baattitude.fr/logo.png",
+      url: "https://baattitude.fr/favicon.png",
       width: 512,
       height: 512
     },
@@ -62,30 +62,49 @@ export function OrganizationSchema() {
     },
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Paris",
+      streetAddress: "16 Rue des Pendants",
+      addressLocality: "Pontault-Combault",
       addressRegion: "Île-de-France",
-      postalCode: "75000",
+      postalCode: "77340",
       addressCountry: "FR"
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 48.8034,
+      longitude: 2.6061
     },
     contactPoint: [
       {
         "@type": "ContactPoint",
         telephone: "+33601591920",
         contactType: "customer service",
-        areaServed: ["FR", "BE", "CH", "LU", "MC"],
+        areaServed: ["FR", "BE", "CH", "LU", "MC", "DE", "ES", "IT", "GB"],
+        availableLanguage: ["French", "English"],
+        hoursAvailable: {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          opens: "08:00",
+          closes: "19:00"
+        }
+      },
+      {
+        "@type": "ContactPoint",
+        telephone: "+33177000952",
+        contactType: "sales",
+        areaServed: "Worldwide",
         availableLanguage: ["French", "English"]
       },
       {
         "@type": "ContactPoint",
         email: "contact@baattitude.fr",
-        contactType: "sales",
+        contactType: "customer support",
         areaServed: "Worldwide"
       }
     ],
     sameAs: [
-      "https://www.linkedin.com/company/baattitude",
-      "https://www.instagram.com/baattitude",
-      "https://www.facebook.com/baattitude"
+      "https://www.linkedin.com/company/ba-attitude",
+      "https://www.instagram.com/baattitude.events",
+      "https://www.facebook.com/baattitude.events"
     ],
     knowsAbout: [
       "Montage de stands d'exposition",
@@ -95,32 +114,52 @@ export function OrganizationSchema() {
       "Coordination terrain",
       "Démontage de stands",
       "Scénographie événementielle",
-      "Prestations techniques internationales"
+      "Prestations techniques internationales",
+      "Foires et expositions",
+      "Événements corporate"
     ],
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Services BA ATTITUDE",
-      itemListElement: [
-        {
-          "@type": "OfferCatalog",
-          name: "Salons Professionnels",
-          itemListElement: [
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Montage de stands" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Démontage de stands" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Coordination terrain" } }
-          ]
-        },
-        {
-          "@type": "OfferCatalog", 
-          name: "Logistique Événementielle",
-          itemListElement: [
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Transport de matériel" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Stockage" } },
-            { "@type": "Offer", itemOffered: { "@type": "Service", name: "Manutention" } }
-          ]
+    makesOffer: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Montage de stands",
+          description: "Installation complète de stands d'exposition pour salons professionnels"
         }
-      ]
-    },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Démontage de stands",
+          description: "Démontage soigné et évacuation après événement"
+        }
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Logistique événementielle",
+          description: "Transport, stockage et manutention de matériel événementiel"
+        }
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Coordination terrain",
+          description: "Gestion et coordination des équipes sur site"
+        }
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Scénographie événementielle",
+          description: "Conception et réalisation de décors sur mesure"
+        }
+      }
+    ],
     areaServed: [
       { "@type": "Country", name: "France" },
       { "@type": "Country", name: "Belgique" },
@@ -131,10 +170,12 @@ export function OrganizationSchema() {
       { "@type": "Country", name: "Espagne" },
       { "@type": "Country", name: "Italie" },
       { "@type": "Country", name: "Royaume-Uni" },
+      { "@type": "Country", name: "Pays-Bas" },
+      { "@type": "Country", name: "Émirats arabes unis" },
       { "@type": "GeoCircle", name: "Europe" },
       { "@type": "GeoCircle", name: "Moyen-Orient" }
     ],
-    slogan: "Votre partenaire salons & événements B2B en France",
+    slogan: "Votre partenaire salons & événements B2B en France et à l'international",
     numberOfEmployees: {
       "@type": "QuantitativeValue",
       minValue: 10,
@@ -146,7 +187,22 @@ export function OrganizationSchema() {
       ratingCount: "127",
       bestRating: "5",
       worstRating: "1"
-    }
+    },
+    review: [
+      {
+        "@type": "Review",
+        author: {
+          "@type": "Person",
+          name: "Marie Dubois"
+        },
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5"
+        },
+        reviewBody: "BA ATTITUDE est notre partenaire technique depuis 8 ans. Leur réactivité et leur professionnalisme nous permettent d'aborder chaque salon en toute sérénité."
+      }
+    ]
   };
 
   return (

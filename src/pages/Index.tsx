@@ -8,7 +8,7 @@ import { ProcessSection } from "@/components/home/ProcessSection";
 import { StatsSection } from "@/components/home/StatsSection";
 import { FAQSection } from "@/components/home/FAQSection";
 import { SEOHead, LocalBusinessSchema } from "@/components/seo/StructuredData";
-import { WebsiteSchema, OrganizationSchema, HowToSchema, ItemListSchema } from "@/components/seo/WebsiteSchema";
+import { WebsiteSchema, OrganizationSchema, HowToSchema, ItemListSchema, SpeakableSchema } from "@/components/seo/WebsiteSchema";
 
 // Homepage FAQ data for structured data
 const homeFaqs = [
@@ -48,7 +48,7 @@ const Index = () => {
         ogType="website"
       />
       
-      {/* Structured Data for Google, ChatGPT, Perplexity */}
+      {/* Structured Data for Google, ChatGPT, Perplexity, Alexa */}
       <WebsiteSchema />
       <OrganizationSchema />
       <LocalBusinessSchema
@@ -71,6 +71,16 @@ const Index = () => {
         description="Découvrez notre méthodologie en 4 étapes pour réussir votre salon professionnel avec BA ATTITUDE"
         steps={processSteps}
         totalTime="P2W"
+      />
+      {/* Speakable for voice assistants (Alexa, Google Assistant, Siri) */}
+      <SpeakableSchema 
+        cssSelector={[
+          "h1",
+          ".hero-description",
+          ".faq-answer",
+          "article h2",
+          "article p:first-of-type"
+        ]}
       />
       
       {/* Page Content */}
