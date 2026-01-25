@@ -11,6 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { SEOHead, LocalBusinessSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { SpeakableSchema } from "@/components/seo/WebsiteSchema";
 
 const contactFaqs = [
   {
@@ -65,6 +66,14 @@ export default function Contact() {
       />
       <FAQSchema faqs={contactFaqs} />
       <BreadcrumbSchema items={contactBreadcrumbs} />
+      <SpeakableSchema 
+        cssSelector={[
+          "h1",
+          "h2",
+          ".text-muted-foreground",
+          "address"
+        ]}
+      />
       
       {/* Hero */}
       <section className="pt-32 pb-20 bg-background relative overflow-hidden">

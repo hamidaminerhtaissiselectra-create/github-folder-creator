@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin, CheckCircle, Globe, Truck, Clock, Users, Phone, Building2, ChevronDown } from "lucide-react";
 import { FadeInSection, StaggerContainer, staggerItem } from "@/components/animations/ParallaxSection";
 import { LocalBusinessSchema, FAQSchema, SEOHead, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { SpeakableSchema, ItemListSchema } from "@/components/seo/WebsiteSchema";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import zonesInterventionFrance from "@/assets/zones-intervention-france.jpg";
 import salonMontage from "@/assets/salon-montage-lyon-professionnel.jpg";
@@ -368,6 +369,23 @@ export default function ZonesIntervention() {
         { name: "Accueil", url: "https://baattitude.fr" },
         { name: "Zones d'intervention", url: "https://baattitude.fr/zones-intervention" }
       ]} />
+      <ItemListSchema
+        name="Zones d'intervention BA ATTITUDE"
+        description="Régions françaises couvertes pour le montage de stands et événements"
+        items={regions.map(r => ({
+          name: r.name,
+          url: `https://baattitude.fr/zones/${r.id}`,
+          description: r.description
+        }))}
+      />
+      <SpeakableSchema 
+        cssSelector={[
+          "h1",
+          "h2",
+          "h3",
+          ".text-muted-foreground"
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-background relative overflow-hidden">

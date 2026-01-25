@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Check, ArrowLeft, Phone, CheckCircle, MapPin, Clock, Shield, Users, Award, Building2, ChevronRight } from "lucide-react";
 import { ParallaxSection, FadeInSection, StaggerContainer, staggerItem } from "@/components/animations/ParallaxSection";
 import { SEOHead, BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, SpeakableSchema, HowToSchema } from "@/components/seo/WebsiteSchema";
 import {
   Accordion,
   AccordionContent,
@@ -543,6 +544,12 @@ export default function ServiceDetail() {
     );
   }
 
+  // Prepare HowTo steps from methodology
+  const howToSteps = service.methodology.map(step => ({
+    name: step.title,
+    text: step.description
+  }));
+
   return (
     <Layout>
       <SEOHead 
@@ -560,6 +567,26 @@ export default function ServiceDetail() {
         { name: "Services", url: "https://baattitude.fr/services" },
         { name: service.title, url: `https://baattitude.fr/services/${resolvedId}` },
       ]} />
+      <ServiceSchema
+        name={service.title}
+        description={service.metaDescription}
+        url={`https://baattitude.fr/services/${resolvedId}`}
+        areaServed={["France", "Europe", "International"]}
+      />
+      <HowToSchema
+        name={`${service.title} - Méthodologie BA ATTITUDE`}
+        description={service.description}
+        steps={howToSteps}
+        totalTime="P2W"
+      />
+      <SpeakableSchema 
+        cssSelector={[
+          "h1",
+          "h2",
+          ".text-muted-foreground",
+          ".AccordionContent"
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-background relative overflow-hidden">

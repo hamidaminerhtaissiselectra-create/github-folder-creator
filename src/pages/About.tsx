@@ -5,7 +5,7 @@ import { ArrowRight, Award, Users, Heart, Shield, Quote, CheckCircle, Building2,
 import { Button } from "@/components/ui/button";
 import { ParallaxSection, FadeInSection } from "@/components/animations/ParallaxSection";
 import { SEOHead, LocalBusinessSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
-import { OrganizationSchema, HowToSchema } from "@/components/seo/WebsiteSchema";
+import { OrganizationSchema, HowToSchema, SpeakableSchema } from "@/components/seo/WebsiteSchema";
 import aboutTeam from "@/assets/about-team.jpg";
 import aboutEquipeReunion from "@/assets/about-equipe-reunion.jpg";
 import standLuxe from "@/assets/stand-luxe-scenographie.jpg";
@@ -88,6 +88,14 @@ export default function About() {
         description="15 ans d'évolution dans les prestations techniques événementielles"
         steps={companyTimeline}
         totalTime="P15Y"
+      />
+      <SpeakableSchema 
+        cssSelector={[
+          "h1",
+          "h2",
+          ".text-muted-foreground",
+          "blockquote"
+        ]}
       />
 
       {/* Hero */}

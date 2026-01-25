@@ -4,7 +4,8 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin, CheckCircle, Building2, Calendar, Users, Phone } from "lucide-react";
 import { ParallaxSection, FadeInSection } from "@/components/animations/ParallaxSection";
-import { SEOHead } from "@/components/seo/StructuredData";
+import { SEOHead, BreadcrumbSchema, LocalBusinessSchema } from "@/components/seo/StructuredData";
+import { SpeakableSchema } from "@/components/seo/WebsiteSchema";
 import heroImage from "@/assets/hero-event.jpg";
 const zonesData: Record<string, {
   city: string;
@@ -213,13 +214,28 @@ export default function ZoneIntervention() {
 
   return (
     <Layout>
-      {/* noindex pour pages dynamiques - SEO conforme Google 2025 */}
       <SEOHead
         title={`${zone.title} | BA Attitude`}
         description={zone.description}
-        ogUrl={`https://baattitude.fr/zone/${zoneId}`}
+        canonical={`https://baattitude.fr/zones/${zoneId}`}
+        ogUrl={`https://baattitude.fr/zones/${zoneId}`}
         ogType="website"
-        noindex={true}
+      />
+      <LocalBusinessSchema 
+        areaServed={[zone.city, zone.region, "France"]}
+        serviceType={["Montage de stands", "Démontage de stands", "Logistique événementielle"]}
+      />
+      <BreadcrumbSchema items={[
+        { name: "Accueil", url: "https://baattitude.fr" },
+        { name: "Zones d'intervention", url: "https://baattitude.fr/zones-intervention" },
+        { name: zone.region, url: `https://baattitude.fr/zones/${zoneId}` }
+      ]} />
+      <SpeakableSchema 
+        cssSelector={[
+          "h1",
+          "h2",
+          ".text-muted-foreground"
+        ]}
       />
       <section className="pt-32 pb-20 bg-background relative overflow-hidden">
         <div className="absolute inset-0">

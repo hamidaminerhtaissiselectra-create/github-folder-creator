@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { SEOHead, BreadcrumbSchema } from "@/components/seo/StructuredData";
-import { ItemListSchema } from "@/components/seo/WebsiteSchema";
+import { ItemListSchema, SpeakableSchema } from "@/components/seo/WebsiteSchema";
 import { ArrowUpRight, ArrowRight, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ParallaxSection, FadeInSection } from "@/components/animations/ParallaxSection";
@@ -147,6 +147,14 @@ export default function Realisations() {
         name="Réalisations BA ATTITUDE"
         description="Portfolio de nos interventions sur salons professionnels et événements B2B"
         items={projectsSchemaData}
+      />
+      <SpeakableSchema 
+        cssSelector={[
+          "h1",
+          "h2",
+          "h3",
+          ".text-muted-foreground"
+        ]}
       />
       
       {/* Hero */}
