@@ -61,6 +61,7 @@ export function StatsSection() {
       />
       
       <div className="container mx-auto px-4 relative z-10">
+        <h2 className="sr-only">BA ATTITUDE en chiffres clés</h2>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {stats.map((stat, index) => (
             <motion.div
