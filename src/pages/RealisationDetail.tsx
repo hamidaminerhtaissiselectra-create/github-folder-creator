@@ -7,6 +7,7 @@ import { ArrowLeft, ArrowRight, MapPin, Calendar, Users, CheckCircle2, Quote, Ch
 import { FadeInSection, ParallaxImage, StaggerContainer, staggerItem } from "@/components/animations/ParallaxSection";
 import { SEOHead, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { EventSchema } from "@/components/seo/EventSchema";
+import { SpeakableSchema } from "@/components/seo/WebsiteSchema";
 import {
   Breadcrumb,
   BreadcrumbList,
@@ -366,6 +367,14 @@ export default function RealisationDetail() {
           { name: "Réalisations", url: "https://baattitude.fr/realisations" },
           { name: project.title, url: `https://baattitude.fr/realisations/${projectId}` }
         ]} 
+      />
+      <SpeakableSchema 
+        cssSelector={[
+          "h1",
+          "h2",
+          "blockquote",
+          ".text-muted-foreground"
+        ]}
       />
 
       {/* Breadcrumb UI */}

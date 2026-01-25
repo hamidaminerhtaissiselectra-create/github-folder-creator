@@ -5,7 +5,7 @@ import { ArrowUpRight, ArrowRight, CheckCircle, ChevronRight } from "lucide-reac
 import { Button } from "@/components/ui/button";
 import { useRef } from "react";
 import { SEOHead, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { ItemListSchema, HowToSchema } from "@/components/seo/WebsiteSchema";
+import { ItemListSchema, HowToSchema, SpeakableSchema } from "@/components/seo/WebsiteSchema";
 import {
   Breadcrumb,
   BreadcrumbList,
@@ -136,6 +136,14 @@ export default function Services() {
         description="Notre processus en 4 étapes pour réussir votre salon professionnel"
         steps={methodologySteps}
         totalTime="P2W"
+      />
+      <SpeakableSchema 
+        cssSelector={[
+          "h1",
+          "h2",
+          ".text-muted-foreground",
+          ".text-xl"
+        ]}
       />
 
       {/* Breadcrumb UI */}

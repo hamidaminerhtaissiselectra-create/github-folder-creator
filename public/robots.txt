@@ -115,11 +115,15 @@ Disallow: /api/
 Disallow: /*.json$
 
 # ===========================================
-# SITEMAPS
+# SITEMAPS & AI FILES
 # ===========================================
 
 Sitemap: https://baattitude.fr/sitemap.xml
 Sitemap: https://baattitude.fr/sitemap-images.xml
+
+# LLMs.txt for AI crawlers
+# https://baattitude.fr/llms.txt
+# https://baattitude.fr/.well-known/llms.txt
 
 # ===========================================
 # CRAWL OPTIMIZATION

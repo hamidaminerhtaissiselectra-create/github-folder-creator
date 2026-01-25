@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { SEOHead, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { SpeakableSchema } from "@/components/seo/WebsiteSchema";
 import { ArrowRight, Globe, Users, CheckCircle, MapPin, Plane, Building2, Handshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ParallaxSection, FadeInSection } from "@/components/animations/ParallaxSection";
@@ -94,6 +95,14 @@ export default function International() {
       />
       <BreadcrumbSchema items={internationalBreadcrumbs} />
       <FAQSchema faqs={internationalFaqs} />
+      <SpeakableSchema 
+        cssSelector={[
+          "h1",
+          "h2",
+          "blockquote",
+          ".text-muted-foreground"
+        ]}
+      />
       
       {/* Hero */}
       <section className="pt-32 pb-20 bg-background relative overflow-hidden">

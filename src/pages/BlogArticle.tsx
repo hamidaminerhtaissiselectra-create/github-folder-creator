@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Calendar, User, Clock, Share2, Linkedin, Twitter, Facebook, ChevronRight } from "lucide-react";
 import { SEOHead, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { ArticleSchema } from "@/components/seo/ArticleSchema";
+import { SpeakableSchema } from "@/components/seo/WebsiteSchema";
 import {
   Breadcrumb,
   BreadcrumbList,
@@ -308,6 +309,14 @@ export default function BlogArticle() {
           { name: "Blog", url: "https://baattitude.fr/blog" },
           { name: article.title, url: `https://baattitude.fr/blog/${articleId}` }
         ]} 
+      />
+      <SpeakableSchema 
+        cssSelector={[
+          "h1",
+          "h2",
+          "article p",
+          ".prose"
+        ]}
       />
 
       {/* Breadcrumb UI */}

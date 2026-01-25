@@ -8,7 +8,7 @@
   <!-- Page d'accueil - Priorité maximale -->
   <url>
     <loc>https://baattitude.fr/</loc>
-    <lastmod>2025-01-23</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://baattitude.fr/" />
@@ -18,28 +18,28 @@
   <!-- Pages principales -->
   <url>
     <loc>https://baattitude.fr/a-propos</loc>
-    <lastmod>2025-01-23</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/services</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/realisations</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/contact</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -47,42 +47,42 @@
   <!-- Pages Services détail -->
   <url>
     <loc>https://baattitude.fr/services/salons-professionnels</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/services/support-technique</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/services/montage-demontage</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://baattitude.fr/services/logistique-terrain</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://baattitude.fr/services/logistique-coordination</loc>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://baattitude.fr/services/scenographie-decoration</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://baattitude.fr/services/scenographie-stands</loc>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://baattitude.fr/services/location-mobilier</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://baattitude.fr/services/international</loc>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -90,56 +90,56 @@
   <!-- Pages Réalisations détail -->
   <url>
     <loc>https://baattitude.fr/realisations/1</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/realisations/2</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/realisations/3</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/realisations/4</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/realisations/5</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/realisations/6</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/realisations/7</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/realisations/8</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -147,98 +147,98 @@
   <!-- Pages Zones d'intervention -->
   <url>
     <loc>https://baattitude.fr/zones-intervention</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/zones/ile-de-france</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/zones/auvergne-rhone-alpes</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/zones/provence-alpes-cote-azur</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/zones/nouvelle-aquitaine</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/zones/hauts-de-france</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/zones/grand-est</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/zones/pays-de-la-loire</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/zones/bretagne</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/zones/occitanie</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/zones/normandie</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/zones/bourgogne-franche-comte</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/zones/centre-val-de-loire</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/zones/corse</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -246,57 +246,60 @@
   <!-- Page International -->
   <url>
     <loc>https://baattitude.fr/international</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://baattitude.fr/international" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://baattitude.fr/international" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://baattitude.fr/international" />
   </url>
   
   <!-- Blog -->
   <url>
     <loc>https://baattitude.fr/blog</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/blog/organisation-technique-salon-professionnel</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/blog/logistique-evenementielle-internationale</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/blog/montage-demontage-stands-bonnes-pratiques</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/blog/tendances-stands-2024</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/blog/choisir-prestataire-evenementiel</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://baattitude.fr/blog/securite-salons-professionnels</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -304,7 +307,7 @@
   <!-- Mentions légales -->
   <url>
     <loc>https://baattitude.fr/mentions-legales</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -312,7 +315,7 @@
   <!-- Politique de confidentialité -->
   <url>
     <loc>https://baattitude.fr/politique-confidentialite</loc>
-    <lastmod>2025-01-08</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

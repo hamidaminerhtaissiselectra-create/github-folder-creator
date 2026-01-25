@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { SEOHead, BreadcrumbSchema } from "@/components/seo/StructuredData";
-import { ItemListSchema } from "@/components/seo/WebsiteSchema";
+import { ItemListSchema, SpeakableSchema } from "@/components/seo/WebsiteSchema";
 import { ArrowRight, Calendar, User, Clock, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import blogHeaderEditorial from "@/assets/blog-header-editorial.jpg";
@@ -120,6 +120,14 @@ export default function Blog() {
         name="Blog BA ATTITUDE - Ressources événementielles"
         description="Articles et guides pour réussir vos salons professionnels et événements B2B"
         items={articlesSchemaData}
+      />
+      <SpeakableSchema 
+        cssSelector={[
+          "h1",
+          "h2",
+          "article h3",
+          ".text-muted-foreground"
+        ]}
       />
       
       {/* Hero */}
