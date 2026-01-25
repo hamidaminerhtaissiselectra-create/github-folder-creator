@@ -49,7 +49,7 @@ export function ProcessSection() {
       </div>
       
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <header className="text-center max-w-3xl mx-auto mb-20">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -68,7 +68,7 @@ export function ProcessSection() {
           >
             Un processus <span className="text-gradient-gold">éprouvé</span>
           </motion.h2>
-        </div>
+        </header>
 
         <div className="relative max-w-5xl mx-auto">
           {steps.map((step, index) => (

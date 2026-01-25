@@ -23,7 +23,8 @@ export function ClientsSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <span className="text-sm font-medium text-muted-foreground uppercase tracking-widest">
+          <h2 className="sr-only">Nos clients de référence</h2>
+          <span className="text-sm font-medium text-muted-foreground uppercase tracking-widest" aria-hidden="true">
             Ils nous font confiance
           </span>
         </motion.div>
