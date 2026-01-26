@@ -86,6 +86,7 @@ export default function International() {
         description="Interventions sur salons professionnels dans plus de 30 pays. Coordination locale, logistique internationale et formalités douanières. Partenaire événementiel mondial."
         canonical="https://baattitude.fr/international"
         ogUrl="https://baattitude.fr/international"
+        ogImage="https://baattitude.fr/og-international.jpg"
         ogType="website"
         hreflangTags={[
           { lang: "fr", url: "https://baattitude.fr/international" },
