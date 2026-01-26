@@ -75,6 +75,7 @@ export default function About() {
         description="Découvrez BA ATTITUDE, votre partenaire technique pour les salons professionnels depuis 15 ans. Équipes qualifiées, intervention France entière, 500+ projets réalisés."
         canonical="https://baattitude.fr/a-propos"
         ogUrl="https://baattitude.fr/a-propos"
+        ogImage="https://baattitude.fr/og-about.jpg"
         ogType="website"
       />
       <LocalBusinessSchema />

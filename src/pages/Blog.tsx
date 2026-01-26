@@ -113,6 +113,7 @@ export default function Blog() {
         description="Conseils d'experts, bonnes pratiques et actualités du secteur événementiel B2B. Guides pour réussir vos salons professionnels et événements corporate."
         canonical="https://baattitude.fr/blog"
         ogUrl="https://baattitude.fr/blog"
+        ogImage="https://baattitude.fr/og-blog.jpg"
         ogType="website"
       />
       <BreadcrumbSchema items={blogBreadcrumbs} />

@@ -140,6 +140,7 @@ export default function Realisations() {
         description="Découvrez nos projets événementiels : Maison & Objet, SIAL Paris, ITB Berlin... +500 salons professionnels réalisés en France et à l'international."
         canonical="https://baattitude.fr/realisations"
         ogUrl="https://baattitude.fr/realisations"
+        ogImage="https://baattitude.fr/og-realisations.jpg"
         ogType="website"
       />
       <BreadcrumbSchema items={realisationsBreadcrumbs} />

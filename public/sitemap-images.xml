@@ -12,6 +12,16 @@
     </image:image>
   </url>
   
+  <!-- Page À propos -->
+  <url>
+    <loc>https://baattitude.fr/a-propos</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/og-about.jpg</image:loc>
+      <image:title>Équipe BA ATTITUDE - Experts événementiels</image:title>
+      <image:caption>Notre équipe de techniciens qualifiés pour vos salons professionnels</image:caption>
+    </image:image>
+  </url>
+  
   <!-- Page Services -->
   <url>
     <loc>https://baattitude.fr/services</loc>

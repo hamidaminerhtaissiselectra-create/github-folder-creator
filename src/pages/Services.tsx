@@ -117,6 +117,7 @@ export default function Services() {
         description="Découvrez nos services de prestations techniques pour salons professionnels : montage de stands, logistique événementielle, support technique, scénographie. Intervention France et international."
         canonical="https://baattitude.fr/services"
         ogUrl="https://baattitude.fr/services"
+        ogImage="https://baattitude.fr/og-services.jpg"
         ogType="website"
       />
       <BreadcrumbSchema 
