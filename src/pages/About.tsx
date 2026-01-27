@@ -144,7 +144,11 @@ export default function About() {
                   <img
                     src={aboutTeam}
                     alt="Équipe BA ATTITUDE spécialiste montage stands salons professionnels"
+                    width={640}
+                    height={800}
                     className="w-full h-full object-cover"
+                    loading="eager"
+                    decoding="async"
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 w-48 h-48 border-2 border-primary rounded-lg -z-10" />
@@ -194,8 +198,11 @@ export default function About() {
                 <img
                   src={aboutEquipeReunion}
                   alt="Réunion de coordination de l'équipe BA ATTITUDE pour un projet événementiel"
+                  width={800}
+                  height={450}
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
               <p className="mt-4 text-sm text-muted-foreground text-center">
@@ -207,8 +214,11 @@ export default function About() {
                 <img
                   src={standLuxe}
                   alt="Stand d'exposition luxe réalisé par BA ATTITUDE avec scénographie premium"
+                  width={800}
+                  height={450}
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
               <p className="mt-4 text-sm text-muted-foreground text-center">

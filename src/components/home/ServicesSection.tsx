@@ -106,13 +106,16 @@ export function ServicesSection() {
                 to={service.href}
                 className="group block relative overflow-hidden rounded-lg bg-card border border-border hover:border-primary/50 transition-all duration-500"
               >
-                {/* Image */}
+                {/* Image with explicit dimensions */}
                 <div className="aspect-[4/3] overflow-hidden relative">
                   <img
                     src={service.image}
                     alt={service.imageAlt}
+                    width={640}
+                    height={480}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"
+                    decoding="async"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
                 </div>

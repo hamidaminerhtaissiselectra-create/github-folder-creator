@@ -1,40 +1,43 @@
 import { useState, useRef, useEffect } from "react";
 import { cn } from "@/lib/utils";
 
-interface LazyImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
+interface OptimizedImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string;
   alt: string;
-  width?: number;
-  height?: number;
-  placeholderSrc?: string;
+  width: number;
+  height: number;
+  priority?: boolean; // Above-the-fold images should have priority=true (no lazy loading)
+  sizes?: string;
   className?: string;
   wrapperClassName?: string;
-  priority?: boolean;
-  sizes?: string;
+  aspectRatio?: string;
 }
 
 /**
- * LazyImage Component - Optimized for Core Web Vitals
+ * OptimizedImage Component
  * 
- * - Explicit width/height to prevent CLS
+ * Features:
+ * - Explicit width/height for CLS prevention
+ * - Priority loading for above-the-fold images
  * - Lazy loading for below-the-fold images
- * - Priority mode for above-the-fold images
  * - Intersection Observer for performance
+ * - Smooth loading transitions
+ * - Responsive sizes support
  */
-export function LazyImage({
+export function OptimizedImage({
   src,
   alt,
   width,
   height,
-  placeholderSrc,
-  className,
-  wrapperClassName,
   priority = false,
   sizes,
+  className,
+  wrapperClassName,
+  aspectRatio,
   ...props
-}: LazyImageProps) {
+}: OptimizedImageProps) {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [isInView, setIsInView] = useState(priority);
+  const [isInView, setIsInView] = useState(priority); // Priority images are immediately "in view"
   const imgRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
@@ -52,7 +55,7 @@ export function LazyImage({
         }
       },
       {
-        rootMargin: "200px",
+        rootMargin: "200px", // Start loading 200px before entering viewport
         threshold: 0.01,
       }
     );
@@ -64,9 +67,9 @@ export function LazyImage({
     return () => observer.disconnect();
   }, [priority]);
 
-  const aspectStyle = width && height 
-    ? { aspectRatio: `${width}/${height}` }
-    : undefined;
+  const aspectStyle = aspectRatio
+    ? { aspectRatio }
+    : { aspectRatio: `${width}/${height}` };
 
   return (
     <div 
@@ -85,13 +88,13 @@ export function LazyImage({
       {/* Actual image */}
       <img
         ref={imgRef}
-        src={isInView ? src : placeholderSrc || "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"}
+        src={isInView ? src : "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"}
         alt={alt}
         width={width}
         height={height}
         sizes={sizes}
         className={cn(
-          "transition-opacity duration-500",
+          "transition-opacity duration-500 w-full h-full object-cover",
           isLoaded ? "opacity-100" : "opacity-0",
           className
         )}
@@ -102,5 +105,34 @@ export function LazyImage({
         {...props}
       />
     </div>
+  );
+}
+
+/**
+ * HeroImage Component
+ * 
+ * Specialized for above-the-fold hero images:
+ * - No lazy loading (priority=true by default)
+ * - High fetch priority
+ * - Preload hint support
+ */
+export function HeroImage({
+  src,
+  alt,
+  width,
+  height,
+  className,
+  ...props
+}: Omit<OptimizedImageProps, 'priority'>) {
+  return (
+    <OptimizedImage
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      priority={true}
+      className={className}
+      {...props}
+    />
   );
 }

@@ -19,7 +19,7 @@ export function HeroSection() {
 
   return (
     <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Parallax */}
+      {/* Background Image with Parallax - Priority loading, explicit dimensions */}
       <motion.div 
         style={{ y: backgroundY, scale }}
         className="absolute inset-0"
@@ -27,7 +27,12 @@ export function HeroSection() {
         <img
           src={heroPanoramique}
           alt="Salon professionnel B2B en France - Prestations techniques événementielles BA ATTITUDE"
+          width={1920}
+          height={1080}
           className="w-full h-full object-cover"
+          loading="eager"
+          decoding="sync"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/60 to-transparent" />

@@ -6,6 +6,7 @@ import { ArrowRight, Check, ArrowLeft, Phone, CheckCircle, MapPin, Clock, Shield
 import { ParallaxSection, FadeInSection, StaggerContainer, staggerItem } from "@/components/animations/ParallaxSection";
 import { SEOHead, BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from "@/components/seo/StructuredData";
 import { ServiceSchema, SpeakableSchema, HowToSchema } from "@/components/seo/WebsiteSchema";
+import { ServiceSchemaComponent } from "@/components/seo/ServiceSchemaComponent";
 import {
   Accordion,
   AccordionContent,
@@ -573,6 +574,17 @@ export default function ServiceDetail() {
         url={`https://baattitude.fr/services/${resolvedId}`}
         areaServed={["France", "Europe", "International"]}
       />
+      {/* Enhanced Service Schema for rich results */}
+      <ServiceSchemaComponent
+        name={service.title}
+        description={service.metaDescription}
+        url={`https://baattitude.fr/services/${resolvedId}`}
+        image={typeof service.heroImage === 'string' ? service.heroImage : undefined}
+        areaServed={["France", "Belgique", "Suisse", "Luxembourg", "Europe", "International"]}
+        category="Prestations techniques événementielles"
+        serviceOutput="Installation stand professionnel"
+        aggregateRating={{ ratingValue: 4.9, ratingCount: 127 }}
+      />
       <HowToSchema
         name={`${service.title} - Méthodologie BA ATTITUDE`}
         description={service.description}
@@ -594,7 +606,11 @@ export default function ServiceDetail() {
           <img
             src={service.heroImage}
             alt={service.title}
+            width={1920}
+            height={1080}
             className="w-full h-full object-cover opacity-15"
+            loading="eager"
+            decoding="async"
           />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
         </div>

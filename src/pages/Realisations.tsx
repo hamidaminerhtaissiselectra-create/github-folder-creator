@@ -225,8 +225,12 @@ export default function Realisations() {
               <div className="relative">
                 <img
                   src={realisationGalaDior}
-                  alt="Projet en vedette"
+                  alt="Projet en vedette - Coordination de 15 stands pour l'agence DECO+"
+                  width={800}
+                  height={600}
                   className="w-full rounded-lg"
+                  loading="eager"
+                  decoding="async"
                 />
                 <div className="absolute top-4 left-4 px-4 py-2 bg-primary text-primary-foreground text-sm font-medium rounded-full">
                   Projet en vedette
@@ -308,8 +312,12 @@ export default function Realisations() {
                     <div className="aspect-[4/3] overflow-hidden relative">
                       <img
                         src={project.image}
-                        alt={project.title}
+                        alt={`${project.title} - ${project.client}`}
+                        width={640}
+                        height={480}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        loading="lazy"
+                        decoding="async"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
                       <div className="absolute top-4 left-4 flex gap-2">
