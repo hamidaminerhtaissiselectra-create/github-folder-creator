@@ -215,7 +215,11 @@ function TestimonialCard({ testimonial, index }: { testimonial: Testimonial; ind
             <img
               src={testimonial.photo}
               alt={`Portrait de ${testimonial.author}, ${testimonial.role} chez ${testimonial.company}`}
+              width={64}
+              height={64}
               className="w-16 h-16 rounded-full object-cover border-2 border-primary/30"
+              loading="lazy"
+              decoding="async"
             />
             <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
               <Quote className="w-3 h-3 text-primary-foreground" />

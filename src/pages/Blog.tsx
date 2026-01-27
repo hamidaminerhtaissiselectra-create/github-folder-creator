@@ -1,17 +1,20 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { SEOHead, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { ItemListSchema, SpeakableSchema } from "@/components/seo/WebsiteSchema";
-import { ArrowRight, Calendar, User, Clock, Tag } from "lucide-react";
+import { ArrowRight, Calendar, User, Clock, Tag, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Helmet } from "react-helmet-async";
 import blogHeaderEditorial from "@/assets/blog-header-editorial.jpg";
 import blogEntrepotLogistique from "@/assets/blog-entrepot-logistique.jpg";
 import blogStandDesign from "@/assets/blog-stand-design.jpg";
 import blogEvenementCorporate from "@/assets/blog-evenement-corporate.jpg";
 import blogConferenceInternationale from "@/assets/blog-conference-internationale.jpg";
 import blogSupportTechnique from "@/assets/blog-support-technique.jpg";
+
+const ARTICLES_PER_PAGE = 6;
 
 const categories = ["Tous", "Salons", "Logistique", "Conseils", "International"];
 
@@ -90,14 +93,34 @@ const blogBreadcrumbs = [
 ];
 
 export default function Blog() {
+  const [searchParams, setSearchParams] = useSearchParams();
   const [activeCategory, setActiveCategory] = useState("Tous");
+  
+  // Pagination state from URL
+  const currentPage = parseInt(searchParams.get('page') || '1', 10);
   
   const filteredArticles = activeCategory === "Tous" 
     ? articles 
     : articles.filter(a => a.category === activeCategory);
   
   const featuredArticle = filteredArticles.find(a => a.featured);
-  const regularArticles = filteredArticles.filter(a => !a.featured);
+  const allRegularArticles = filteredArticles.filter(a => !a.featured);
+  
+  // Pagination calculations
+  const totalPages = Math.ceil(allRegularArticles.length / ARTICLES_PER_PAGE);
+  const startIndex = (currentPage - 1) * ARTICLES_PER_PAGE;
+  const regularArticles = allRegularArticles.slice(startIndex, startIndex + ARTICLES_PER_PAGE);
+  
+  // Navigation functions
+  const goToPage = (page: number) => {
+    if (page === 1) {
+      searchParams.delete('page');
+    } else {
+      searchParams.set('page', page.toString());
+    }
+    setSearchParams(searchParams);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   // Articles for ItemList schema
   const articlesSchemaData = articles.map(article => ({
@@ -105,17 +128,33 @@ export default function Blog() {
     url: `https://baattitude.fr/blog/${article.id}`,
     description: article.excerpt
   }));
+  
+  // Canonical URL for pagination
+  const canonicalUrl = currentPage === 1 
+    ? "https://baattitude.fr/blog" 
+    : `https://baattitude.fr/blog?page=${currentPage}`;
 
   return (
     <Layout>
       <SEOHead
-        title="Blog Événementiel B2B | Conseils Salons Professionnels - BA ATTITUDE"
+        title={currentPage === 1 
+          ? "Blog Événementiel B2B | Conseils Salons Professionnels - BA ATTITUDE"
+          : `Blog Événementiel B2B - Page ${currentPage} | BA ATTITUDE`}
         description="Conseils d'experts, bonnes pratiques et actualités du secteur événementiel B2B. Guides pour réussir vos salons professionnels et événements corporate."
-        canonical="https://baattitude.fr/blog"
-        ogUrl="https://baattitude.fr/blog"
+        canonical={canonicalUrl}
+        ogUrl={canonicalUrl}
         ogImage="https://baattitude.fr/og-blog.jpg"
         ogType="website"
       />
+      {/* SEO Pagination Links */}
+      <Helmet>
+        {currentPage > 1 && (
+          <link rel="prev" href={currentPage === 2 ? "https://baattitude.fr/blog" : `https://baattitude.fr/blog?page=${currentPage - 1}`} />
+        )}
+        {currentPage < totalPages && (
+          <link rel="next" href={`https://baattitude.fr/blog?page=${currentPage + 1}`} />
+        )}
+      </Helmet>
       <BreadcrumbSchema items={blogBreadcrumbs} />
       <ItemListSchema
         name="Blog BA ATTITUDE - Ressources événementielles"
@@ -203,7 +242,11 @@ export default function Blog() {
                   <img
                     src={featuredArticle.image}
                     alt={featuredArticle.title}
+                    width={800}
+                    height={500}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="eager"
+                    decoding="async"
                   />
                 </div>
                 <div className="p-8 lg:p-12 flex flex-col justify-center">
@@ -262,7 +305,11 @@ export default function Blog() {
                     <img
                       src={article.image}
                       alt={article.title}
+                      width={640}
+                      height={400}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <div className="absolute top-4 left-4">
                       <span className="px-3 py-1 bg-background/80 backdrop-blur-sm text-card-foreground text-xs font-medium rounded-full">
@@ -293,6 +340,56 @@ export default function Blog() {
               </motion.article>
             ))}
           </div>
+          
+          {/* Pagination UI */}
+          {totalPages > 1 && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="flex items-center justify-center gap-4 mt-12"
+            >
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => goToPage(currentPage - 1)}
+                disabled={currentPage === 1}
+                className="flex items-center gap-2"
+              >
+                <ChevronLeft className="w-4 h-4" />
+                Précédent
+              </Button>
+              
+              <div className="flex items-center gap-2">
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                  <button
+                    key={page}
+                    onClick={() => goToPage(page)}
+                    className={`w-10 h-10 rounded-full text-sm font-medium transition-colors ${
+                      page === currentPage
+                        ? "bg-primary text-primary-foreground"
+                        : "bg-muted text-muted-foreground hover:bg-primary/10"
+                    }`}
+                    aria-label={`Page ${page}`}
+                    aria-current={page === currentPage ? "page" : undefined}
+                  >
+                    {page}
+                  </button>
+                ))}
+              </div>
+              
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => goToPage(currentPage + 1)}
+                disabled={currentPage === totalPages}
+                className="flex items-center gap-2"
+              >
+                Suivant
+                <ChevronRight className="w-4 h-4" />
+              </Button>
+            </motion.div>
+          )}
         </div>
       </section>
 

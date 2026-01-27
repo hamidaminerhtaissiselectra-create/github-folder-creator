@@ -77,6 +77,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    
+    <!-- Preload critical resources for Core Web Vitals -->
+    <link rel="preload" href="/src/index.css" as="style" />
+    <link rel="preload" href="/src/main.tsx" as="script" crossorigin />
+    
+    <!-- Preload hero image (above-the-fold LCP optimization) -->
+    <link rel="preload" as="image" href="/src/assets/hero-salon-panoramique.jpg" fetchpriority="high" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 
     <!-- Structured Data LocalBusiness + Organization -->
     <script type="application/ld+json">
