@@ -13,6 +13,8 @@ import RealisationDetail from "./pages/RealisationDetail";
 import International from "./pages/International";
 import ZonesIntervention from "./pages/ZonesIntervention";
 import ZoneIntervention from "./pages/ZoneIntervention";
+import ParisArrondissement from "./pages/ParisArrondissement";
+import ParisBanlieue from "./pages/ParisBanlieue";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogArticle from "./pages/BlogArticle";
@@ -39,6 +41,8 @@ const App = () => (
           <Route path="/international" element={<International />} />
           <Route path="/zones-intervention" element={<ZonesIntervention />} />
           <Route path="/zones/:zoneId" element={<ZoneIntervention />} />
+          <Route path="/paris/:arrondissementId" element={<ParisArrondissement />} />
+          <Route path="/banlieue/:villeId" element={<ParisBanlieue />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:articleId" element={<BlogArticle />} />
           <Route path="/contact" element={<Contact />} />
