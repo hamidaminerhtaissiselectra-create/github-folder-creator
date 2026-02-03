@@ -2,13 +2,40 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MapPin, CheckCircle, Building2, Calendar, Users, Phone, Navigation, Globe, Train } from "lucide-react";
+import { ArrowRight, MapPin, CheckCircle, Building2, Calendar, Users, Phone, Navigation, Globe, Train, ChevronRight, Home } from "lucide-react";
 import { ParallaxSection, FadeInSection } from "@/components/animations/ParallaxSection";
 import { SEOHead, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { SpeakableSchema, ItemListSchema } from "@/components/seo/WebsiteSchema";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { parisBanlieue, allBanlieueList, banlieueByDepartment } from "@/data/paris-banlieue";
+import { parisArrondissements } from "@/data/paris-arrondissements";
 import heroImage from "@/assets/logistique-evenementielle-chargement.jpg";
+
+// Composant Breadcrumbs visuel
+function VisualBreadcrumbs({ items }: { items: { label: string; href?: string }[] }) {
+  return (
+    <nav aria-label="Fil d'Ariane" className="mb-6">
+      <ol className="flex flex-wrap items-center gap-2 text-sm">
+        {items.map((item, index) => (
+          <li key={index} className="flex items-center">
+            {index > 0 && <ChevronRight className="w-4 h-4 text-muted-foreground mx-2" />}
+            {item.href ? (
+              <Link 
+                to={item.href} 
+                className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1"
+              >
+                {index === 0 && <Home className="w-4 h-4" />}
+                {item.label}
+              </Link>
+            ) : (
+              <span className="text-primary font-medium">{item.label}</span>
+            )}
+          </li>
+        ))}
+      </ol>
+    </nav>
+  );
+}
 
 // Schema LocalBusiness spécifique banlieue
 function BanlieueLocalBusinessSchema({ 
@@ -171,8 +198,20 @@ export default function ParisBanlieue() {
         }))}
       />
 
+      {/* Breadcrumbs visuels */}
+      <section className="pt-28 pb-4 bg-background">
+        <div className="container mx-auto px-4">
+          <VisualBreadcrumbs items={[
+            { label: "Accueil", href: "/" },
+            { label: "Zones d'intervention", href: "/zones-intervention" },
+            { label: getDepartmentLabel(ville.departmentCode), href: `/zones-intervention#${ville.departmentCode}` },
+            { label: ville.name }
+          ]} />
+        </div>
+      </section>
+
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-background relative overflow-hidden">
+      <section className="pb-20 bg-background relative overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={heroImage}
@@ -413,6 +452,40 @@ export default function ParisBanlieue() {
                 </span>
               );
             })}
+          </FadeInSection>
+        </div>
+      </section>
+
+      {/* Maillage interne - Paris Intra-muros */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <FadeInSection className="text-center max-w-3xl mx-auto mb-8">
+            <h3 className="text-xl font-display font-semibold text-card-foreground">
+              Nos interventions à Paris
+            </h3>
+            <p className="text-muted-foreground mt-2">
+              Découvrez nos prestations dans les arrondissements parisiens
+            </p>
+          </FadeInSection>
+          <FadeInSection className="flex flex-wrap justify-center gap-3">
+            {["paris-1er", "paris-8e", "paris-15e", "paris-17e"].map((arrId) => {
+              const arrData = parisArrondissements[arrId];
+              return arrData ? (
+                <Link
+                  key={arrId}
+                  to={`/paris/${arrId}`}
+                  className="px-5 py-2 bg-card border border-border rounded-lg text-sm text-card-foreground hover:border-primary/50 hover:text-primary transition-colors"
+                >
+                  {arrData.name}
+                </Link>
+              ) : null;
+            })}
+            <Link
+              to="/zones-intervention"
+              className="px-5 py-2 bg-primary/10 border border-primary/20 rounded-lg text-sm text-primary hover:bg-primary/20 transition-colors"
+            >
+              Tous les arrondissements →
+            </Link>
           </FadeInSection>
         </div>
       </section>
