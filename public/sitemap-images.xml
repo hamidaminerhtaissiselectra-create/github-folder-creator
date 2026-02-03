@@ -132,4 +132,78 @@
     </image:image>
   </url>
   
+  <!-- Arrondissements de Paris -->
+  <url>
+    <loc>https://baattitude.fr/paris/paris-1er</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/hero-salon-panoramique.jpg</image:loc>
+      <image:title>Montage Stand Paris 1er - Louvre</image:title>
+      <image:caption>Prestations techniques salons Carrousel du Louvre et Palais Royal</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-8e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/stand-scenographie-premium.jpg</image:loc>
+      <image:title>Montage Stand Paris 8e - Champs-Élysées</image:title>
+      <image:caption>Installation stands Grand Palais et événements Champs-Élysées</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-15e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/hero-salon-professionnel.jpg</image:loc>
+      <image:title>Montage Stand Paris 15e - Porte de Versailles</image:title>
+      <image:caption>Expert salons Parc des Expositions Porte de Versailles</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-17e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/montage-stand-salon-paris.jpg</image:loc>
+      <image:title>Montage Stand Paris 17e - Palais des Congrès</image:title>
+      <image:caption>Intervention express Palais des Congrès Porte Maillot</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Banlieue Parisienne - Sites majeurs -->
+  <url>
+    <loc>https://baattitude.fr/banlieue/la-defense</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/service-corporate.jpg</image:loc>
+      <image:title>Montage Stand La Défense - CNIT</image:title>
+      <image:caption>Prestataire n°1 CNIT et Paris La Défense Arena</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/banlieue/villepinte</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/logistique-evenementielle-chargement.jpg</image:loc>
+      <image:title>Montage Stand Villepinte - Paris Nord</image:title>
+      <image:caption>Expert Paris Nord Villepinte - 200+ salons/an</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/banlieue/le-bourget</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/conference-internationale.jpg</image:loc>
+      <image:title>Montage Stand Le Bourget - Aéronautique</image:title>
+      <image:caption>Spécialiste Salon du Bourget et événements aviation</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/banlieue/saint-denis</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/support-technique-evenement.jpg</image:loc>
+      <image:title>Événements Saint-Denis - Stade de France</image:title>
+      <image:caption>Prestations techniques Stade de France et Cité du Cinéma</image:caption>
+    </image:image>
+  </url>
+
 </urlset>

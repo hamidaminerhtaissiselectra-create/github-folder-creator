@@ -2,13 +2,40 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MapPin, CheckCircle, Building2, Calendar, Users, Phone, Navigation, Globe } from "lucide-react";
+import { ArrowRight, MapPin, CheckCircle, Building2, Calendar, Users, Phone, Navigation, Globe, ChevronRight, Home } from "lucide-react";
 import { ParallaxSection, FadeInSection } from "@/components/animations/ParallaxSection";
 import { SEOHead, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { SpeakableSchema, ItemListSchema } from "@/components/seo/WebsiteSchema";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { parisArrondissements, arrondissementsList } from "@/data/paris-arrondissements";
+import { parisBanlieue, allBanlieueList } from "@/data/paris-banlieue";
 import heroImage from "@/assets/hero-salon-panoramique.jpg";
+
+// Composant Breadcrumbs visuel
+function VisualBreadcrumbs({ items }: { items: { label: string; href?: string }[] }) {
+  return (
+    <nav aria-label="Fil d'Ariane" className="mb-6">
+      <ol className="flex flex-wrap items-center gap-2 text-sm">
+        {items.map((item, index) => (
+          <li key={index} className="flex items-center">
+            {index > 0 && <ChevronRight className="w-4 h-4 text-muted-foreground mx-2" />}
+            {item.href ? (
+              <Link 
+                to={item.href} 
+                className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-1"
+              >
+                {index === 0 && <Home className="w-4 h-4" />}
+                {item.label}
+              </Link>
+            ) : (
+              <span className="text-primary font-medium">{item.label}</span>
+            )}
+          </li>
+        ))}
+      </ol>
+    </nav>
+  );
+}
 
 // Schema LocalBusiness spécifique arrondissement
 function ArrondissementLocalBusinessSchema({ 
@@ -163,8 +190,20 @@ export default function ParisArrondissement() {
         }))}
       />
 
+      {/* Breadcrumbs visuels */}
+      <section className="pt-28 pb-4 bg-background">
+        <div className="container mx-auto px-4">
+          <VisualBreadcrumbs items={[
+            { label: "Accueil", href: "/" },
+            { label: "Zones d'intervention", href: "/zones-intervention" },
+            { label: "Paris", href: "/zones-intervention#paris" },
+            { label: arrondissement.name }
+          ]} />
+        </div>
+      </section>
+
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-background relative overflow-hidden">
+      <section className="pb-20 bg-background relative overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={heroImage}
@@ -403,6 +442,40 @@ export default function ParisArrondissement() {
                 </span>
               );
             })}
+          </FadeInSection>
+        </div>
+      </section>
+
+      {/* Maillage interne - Banlieue parisienne */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <FadeInSection className="text-center max-w-3xl mx-auto mb-8">
+            <h3 className="text-xl font-display font-semibold text-card-foreground">
+              Également présents en banlieue parisienne
+            </h3>
+            <p className="text-muted-foreground mt-2">
+              Découvrez nos interventions dans les parcs des expositions de la région
+            </p>
+          </FadeInSection>
+          <FadeInSection className="flex flex-wrap justify-center gap-3">
+            {allBanlieueList.slice(0, 6).map((villeId) => {
+              const villeData = parisBanlieue[villeId];
+              return villeData ? (
+                <Link
+                  key={villeId}
+                  to={`/banlieue/${villeId}`}
+                  className="px-5 py-2 bg-card border border-border rounded-lg text-sm text-card-foreground hover:border-primary/50 hover:text-primary transition-colors"
+                >
+                  {villeData.name}
+                </Link>
+              ) : null;
+            })}
+            <Link
+              to="/zones-intervention"
+              className="px-5 py-2 bg-primary/10 border border-primary/20 rounded-lg text-sm text-primary hover:bg-primary/20 transition-colors"
+            >
+              Toutes les zones →
+            </Link>
           </FadeInSection>
         </div>
       </section>
