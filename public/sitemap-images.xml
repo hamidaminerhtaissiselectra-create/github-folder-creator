@@ -205,5 +205,223 @@
       <image:caption>Prestations techniques Stade de France et Cité du Cinéma</image:caption>
     </image:image>
   </url>
+  
+  <!-- Arrondissements de Paris - Complet -->
+  <url>
+    <loc>https://baattitude.fr/paris/paris-2e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/hero-salon-panoramique.jpg</image:loc>
+      <image:title>Montage Stand Paris 2e - Bourse</image:title>
+      <image:caption>Prestations techniques Palais Brongniart et événements Sentier</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-3e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/stand-scenographie-premium.jpg</image:loc>
+      <image:title>Montage Stand Paris 3e - Marais</image:title>
+      <image:caption>Installation stands Arts et Métiers et Haut-Marais</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-4e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/scenographie-stand-premium.jpg</image:loc>
+      <image:title>Montage Stand Paris 4e - Marais Beaubourg</image:title>
+      <image:caption>Événements Centre Pompidou et Hôtel de Ville Paris</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-5e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/conference-internationale.jpg</image:loc>
+      <image:title>Montage Stand Paris 5e - Quartier Latin</image:title>
+      <image:caption>Prestations Panthéon, Sorbonne et Jardin des Plantes</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-6e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/service-scenography.jpg</image:loc>
+      <image:title>Montage Stand Paris 6e - Saint-Germain</image:title>
+      <image:caption>Événements Palais du Luxembourg et Saint-Germain-des-Prés</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-7e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/stand-luxe-scenographie.jpg</image:loc>
+      <image:title>Montage Stand Paris 7e - Tour Eiffel</image:title>
+      <image:caption>Prestations Tour Eiffel, Champ-de-Mars et Invalides</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-9e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/montage-stand-salon-paris.jpg</image:loc>
+      <image:title>Montage Stand Paris 9e - Opéra</image:title>
+      <image:caption>Événements Opéra Garnier et Grands Magasins</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-10e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/logistique-evenementielle-chargement.jpg</image:loc>
+      <image:title>Montage Stand Paris 10e - Canal Saint-Martin</image:title>
+      <image:caption>Prestations Gare de l'Est, Gare du Nord et Canal</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-11e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/support-technique-evenement.jpg</image:loc>
+      <image:title>Montage Stand Paris 11e - Bastille</image:title>
+      <image:caption>Événements Place de la Bastille et Oberkampf</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-12e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/service-logistique.jpg</image:loc>
+      <image:title>Montage Stand Paris 12e - Bercy</image:title>
+      <image:caption>Prestations Palais Omnisports Bercy et Gare de Lyon</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-13e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/logistique-entrepot.jpg</image:loc>
+      <image:title>Montage Stand Paris 13e - BNF</image:title>
+      <image:caption>Événements Bibliothèque François Mitterrand et Chinatown</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-14e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/equipe-montage-stand.jpg</image:loc>
+      <image:title>Montage Stand Paris 14e - Montparnasse</image:title>
+      <image:caption>Prestations Tour Montparnasse et Cité Universitaire</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-16e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/service-decoration.jpg</image:loc>
+      <image:title>Montage Stand Paris 16e - Trocadéro</image:title>
+      <image:caption>Événements Palais de Tokyo et Musée Galliera</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-18e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/salon-montage-lyon-professionnel.jpg</image:loc>
+      <image:title>Montage Stand Paris 18e - Montmartre</image:title>
+      <image:caption>Prestations Sacré-Cœur et événements Montmartre</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-19e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/service-location.jpg</image:loc>
+      <image:title>Montage Stand Paris 19e - La Villette</image:title>
+      <image:caption>Événements Grande Halle et Cité des Sciences</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/paris/paris-20e</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/about-team.jpg</image:loc>
+      <image:title>Montage Stand Paris 20e - Belleville</image:title>
+      <image:caption>Prestations techniques Belleville et Père-Lachaise</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Banlieue Parisienne - Complet -->
+  <url>
+    <loc>https://baattitude.fr/banlieue/roissy-cdg</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/service-international.jpg</image:loc>
+      <image:title>Prestations Roissy-CDG Aéroport</image:title>
+      <image:caption>Logistique événementielle aéroport Charles de Gaulle</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/banlieue/montreuil</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/support-technique-regie.jpg</image:loc>
+      <image:title>Montage Stand Montreuil</image:title>
+      <image:caption>Événements Est Parisien Expo Montreuil</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/banlieue/nanterre</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/service-corporate.jpg</image:loc>
+      <image:title>Montage Stand Nanterre</image:title>
+      <image:caption>Prestations U Arena et événements Hauts-de-Seine</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/banlieue/issy-les-moulineaux</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/scenographie-stand-premium.jpg</image:loc>
+      <image:title>Montage Stand Issy-les-Moulineaux</image:title>
+      <image:caption>Événements corporate Issy et Palais des Congrès</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/banlieue/boulogne-billancourt</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/stand-luxe-scenographie.jpg</image:loc>
+      <image:title>Montage Stand Boulogne-Billancourt</image:title>
+      <image:caption>Prestations techniques sièges sociaux Boulogne</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/banlieue/levallois-perret</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/hero-event.jpg</image:loc>
+      <image:title>Montage Stand Levallois-Perret</image:title>
+      <image:caption>Événements corporate Levallois et Neuilly</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/banlieue/creteil</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/evenement-international-conference.jpg</image:loc>
+      <image:title>Montage Stand Créteil</image:title>
+      <image:caption>Prestations Maison des Arts et Val-de-Marne</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://baattitude.fr/banlieue/orly</loc>
+    <image:image>
+      <image:loc>https://baattitude.fr/assets/logistique-evenementielle-chargement.jpg</image:loc>
+      <image:title>Prestations Aéroport Orly</image:title>
+      <image:caption>Logistique événementielle Paris-Orly</image:caption>
+    </image:image>
+  </url>
 
 </urlset>
