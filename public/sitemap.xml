@@ -537,6 +537,14 @@
     <priority>0.6</priority>
   </url>
   
+  <!-- Page FAQ -->
+  <url>
+    <loc>https://baattitude.fr/faq</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Mentions légales -->
   <url>
     <loc>https://baattitude.fr/mentions-legales</loc>

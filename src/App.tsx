@@ -20,6 +20,7 @@ import Blog from "./pages/Blog";
 import BlogArticle from "./pages/BlogArticle";
 import MentionsLegales from "./pages/MentionsLegales";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
+import FAQ from "./pages/FAQ";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +47,7 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:articleId" element={<BlogArticle />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/faq" element={<FAQ />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
           <Route path="*" element={<NotFound />} />
