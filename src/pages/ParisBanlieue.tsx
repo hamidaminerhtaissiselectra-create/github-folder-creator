@@ -37,12 +37,52 @@ function VisualBreadcrumbs({ items }: { items: { label: string; href?: string }[
   );
 }
 
-// Schema LocalBusiness spécifique banlieue
+// Département details enrichis
+const departmentDetails: Record<string, {
+  name: string;
+  code: string;
+  prefecture: string;
+  population: string;
+  keyFeatures: string[];
+}> = {
+  "92": {
+    name: "Hauts-de-Seine",
+    code: "92",
+    prefecture: "Nanterre",
+    population: "1,6 million",
+    keyFeatures: ["La Défense", "Sièges sociaux CAC40", "Paris La Défense Arena"]
+  },
+  "93": {
+    name: "Seine-Saint-Denis",
+    code: "93",
+    prefecture: "Bobigny",
+    population: "1,6 million",
+    keyFeatures: ["Paris Nord Villepinte", "Le Bourget", "Stade de France"]
+  },
+  "94": {
+    name: "Val-de-Marne",
+    code: "94",
+    prefecture: "Créteil",
+    population: "1,4 million",
+    keyFeatures: ["Aéroport d'Orly", "MIN de Rungis", "Maison des Arts Créteil"]
+  },
+  "95": {
+    name: "Val-d'Oise",
+    code: "95",
+    prefecture: "Cergy-Pontoise",
+    population: "1,2 million",
+    keyFeatures: ["Aéroport Roissy-CDG", "Parc des expositions"]
+  }
+};
+
+// Schema LocalBusiness enrichi par département
 function BanlieueLocalBusinessSchema({ 
   ville 
 }: { 
   ville: typeof parisBanlieue[string] 
 }) {
+  const deptInfo = departmentDetails[ville.departmentCode];
+  
   const schema = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "ProfessionalService"],
@@ -52,6 +92,9 @@ function BanlieueLocalBusinessSchema({
     url: `https://baattitude.fr/banlieue/${ville.id}`,
     telephone: "+33601591920",
     email: "contact@baattitude.fr",
+    priceRange: "€€€",
+    currenciesAccepted: "EUR",
+    paymentAccepted: "Cash, Credit Card, Bank Transfer",
     address: {
       "@type": "PostalAddress",
       streetAddress: "16 Rue des Pendants",
@@ -67,13 +110,23 @@ function BanlieueLocalBusinessSchema({
     },
     areaServed: [
       {
+        "@type": "AdministrativeArea",
+        name: deptInfo?.name || ville.department,
+        identifier: ville.departmentCode,
+        containedIn: {
+          "@type": "AdministrativeArea",
+          name: "Île-de-France",
+          identifier: "IDF"
+        }
+      },
+      {
         "@type": "Place",
         name: ville.name,
         address: {
           "@type": "PostalAddress",
           postalCode: ville.postalCode,
           addressLocality: ville.name,
-          addressRegion: ville.department,
+          addressRegion: deptInfo?.name || ville.department,
           addressCountry: "FR"
         }
       },
@@ -82,16 +135,27 @@ function BanlieueLocalBusinessSchema({
         name: city
       }))
     ],
+    knowsAbout: [
+      "Montage de stands d'exposition",
+      "Logistique événementielle",
+      "Scénographie événementielle",
+      "Support technique salons",
+      ...(deptInfo?.keyFeatures || [])
+    ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: `Services BA ATTITUDE ${ville.name}`,
+      name: `Services BA ATTITUDE ${ville.name} (${ville.departmentCode})`,
       itemListElement: [
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
             name: "Montage de stands",
-            description: `Installation de stands d'exposition à ${ville.name}`
+            description: `Installation de stands d'exposition à ${ville.name} - ${deptInfo?.name || ville.department}`,
+            areaServed: {
+              "@type": "AdministrativeArea",
+              name: deptInfo?.name || ville.department
+            }
           }
         },
         {
@@ -109,6 +173,14 @@ function BanlieueLocalBusinessSchema({
             name: "Logistique événementielle",
             description: `Transport et coordination pour événements ${ville.name} (${ville.departmentCode})`
           }
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Coordination terrain",
+            description: `Gestion et coordination sur site à ${ville.name}`
+          }
         }
       ]
     },
@@ -117,7 +189,57 @@ function BanlieueLocalBusinessSchema({
       ratingValue: "4.9",
       ratingCount: "127",
       bestRating: "5"
-    }
+    },
+    sameAs: [
+      "https://www.linkedin.com/company/ba-attitude",
+      "https://www.instagram.com/baattitude.events"
+    ],
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Saturday"],
+        opens: "09:00",
+        closes: "17:00"
+      }
+    ]
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+// Schema département global
+function DepartmentSchema({ ville }: { ville: typeof parisBanlieue[string] }) {
+  const deptInfo = departmentDetails[ville.departmentCode];
+  if (!deptInfo) return null;
+  
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `https://baattitude.fr/zones-intervention#${ville.departmentCode}`,
+    name: `Montage de Stands ${deptInfo.name} (${deptInfo.code})`,
+    description: `Services de montage et démontage de stands pour salons professionnels dans le ${deptInfo.name}. Population desservie : ${deptInfo.population} habitants.`,
+    provider: {
+      "@type": "LocalBusiness",
+      name: "BA ATTITUDE",
+      url: "https://baattitude.fr"
+    },
+    areaServed: {
+      "@type": "AdministrativeArea",
+      name: deptInfo.name,
+      identifier: deptInfo.code
+    },
+    serviceType: "Prestations techniques événementielles"
   };
 
   return (
@@ -176,6 +298,7 @@ export default function ParisBanlieue() {
       />
       
       <BanlieueLocalBusinessSchema ville={ville} />
+      <DepartmentSchema ville={ville} />
       
       <BreadcrumbSchema items={[
         { name: "Accueil", url: "https://baattitude.fr" },
