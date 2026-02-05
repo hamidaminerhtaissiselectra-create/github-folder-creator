@@ -540,9 +540,394 @@
   <!-- Page FAQ -->
   <url>
     <loc>https://baattitude.fr/faq</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-02-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- GRANDES VILLES DE FRANCE (Top 50) -->
+  <!-- 1. Lyon -->
+  <url>
+    <loc>https://baattitude.fr/ville/lyon</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 2. Marseille -->
+  <url>
+    <loc>https://baattitude.fr/ville/marseille</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 3. Toulouse -->
+  <url>
+    <loc>https://baattitude.fr/ville/toulouse</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 4. Nice -->
+  <url>
+    <loc>https://baattitude.fr/ville/nice</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 5. Nantes -->
+  <url>
+    <loc>https://baattitude.fr/ville/nantes</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 6. Strasbourg -->
+  <url>
+    <loc>https://baattitude.fr/ville/strasbourg</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 7. Montpellier -->
+  <url>
+    <loc>https://baattitude.fr/ville/montpellier</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 8. Bordeaux -->
+  <url>
+    <loc>https://baattitude.fr/ville/bordeaux</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 9. Lille -->
+  <url>
+    <loc>https://baattitude.fr/ville/lille</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 10. Rennes -->
+  <url>
+    <loc>https://baattitude.fr/ville/rennes</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 11. Reims -->
+  <url>
+    <loc>https://baattitude.fr/ville/reims</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 12. Le Havre -->
+  <url>
+    <loc>https://baattitude.fr/ville/le-havre</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 13. Saint-Étienne -->
+  <url>
+    <loc>https://baattitude.fr/ville/saint-etienne</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 14. Toulon -->
+  <url>
+    <loc>https://baattitude.fr/ville/toulon</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 15. Grenoble -->
+  <url>
+    <loc>https://baattitude.fr/ville/grenoble</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 16. Dijon -->
+  <url>
+    <loc>https://baattitude.fr/ville/dijon</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 17. Angers -->
+  <url>
+    <loc>https://baattitude.fr/ville/angers</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 18. Nîmes -->
+  <url>
+    <loc>https://baattitude.fr/ville/nimes</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 19. Villeurbanne -->
+  <url>
+    <loc>https://baattitude.fr/ville/villeurbanne</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 20. Le Mans -->
+  <url>
+    <loc>https://baattitude.fr/ville/le-mans</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 21. Aix-en-Provence -->
+  <url>
+    <loc>https://baattitude.fr/ville/aix-en-provence</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 22. Clermont-Ferrand -->
+  <url>
+    <loc>https://baattitude.fr/ville/clermont-ferrand</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 23. Brest -->
+  <url>
+    <loc>https://baattitude.fr/ville/brest</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 24. Tours -->
+  <url>
+    <loc>https://baattitude.fr/ville/tours</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 25. Limoges -->
+  <url>
+    <loc>https://baattitude.fr/ville/limoges</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 26. Amiens -->
+  <url>
+    <loc>https://baattitude.fr/ville/amiens</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 27. Perpignan -->
+  <url>
+    <loc>https://baattitude.fr/ville/perpignan</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 28. Metz -->
+  <url>
+    <loc>https://baattitude.fr/ville/metz</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 29. Besançon -->
+  <url>
+    <loc>https://baattitude.fr/ville/besancon</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 30. Orléans -->
+  <url>
+    <loc>https://baattitude.fr/ville/orleans</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 31. Mulhouse -->
+  <url>
+    <loc>https://baattitude.fr/ville/mulhouse</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 32. Caen -->
+  <url>
+    <loc>https://baattitude.fr/ville/caen</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 33. Nancy -->
+  <url>
+    <loc>https://baattitude.fr/ville/nancy</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 34. Rouen -->
+  <url>
+    <loc>https://baattitude.fr/ville/rouen</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 35. Saint-Denis (Réunion) -->
+  <url>
+    <loc>https://baattitude.fr/ville/saint-denis-reunion</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 36. Argenteuil -->
+  <url>
+    <loc>https://baattitude.fr/ville/argenteuil</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 37. Montreuil -->
+  <url>
+    <loc>https://baattitude.fr/ville/montreuil</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 38. Saint-Paul (Réunion) -->
+  <url>
+    <loc>https://baattitude.fr/ville/saint-paul-reunion</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 39. Tourcoing -->
+  <url>
+    <loc>https://baattitude.fr/ville/tourcoing</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 40. Roubaix -->
+  <url>
+    <loc>https://baattitude.fr/ville/roubaix</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 41. Avignon -->
+  <url>
+    <loc>https://baattitude.fr/ville/avignon</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 42. Dunkerque -->
+  <url>
+    <loc>https://baattitude.fr/ville/dunkerque</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 43. Valence -->
+  <url>
+    <loc>https://baattitude.fr/ville/valence</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 44. Pau -->
+  <url>
+    <loc>https://baattitude.fr/ville/pau</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 45. La Rochelle -->
+  <url>
+    <loc>https://baattitude.fr/ville/la-rochelle</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 46. Cannes -->
+  <url>
+    <loc>https://baattitude.fr/ville/cannes</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 47. Ajaccio -->
+  <url>
+    <loc>https://baattitude.fr/ville/ajaccio</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- 48. Antibes -->
+  <url>
+    <loc>https://baattitude.fr/ville/antibes</loc>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <!-- Mentions légales -->
