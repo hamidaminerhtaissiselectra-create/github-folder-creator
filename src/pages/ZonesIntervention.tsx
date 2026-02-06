@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MapPin, CheckCircle, Globe, Truck, Clock, Users, Phone, Building2, ChevronDown, Building, Train } from "lucide-react";
+import { ArrowRight, MapPin, CheckCircle, Globe, Truck, Clock, Users, Phone, Building2, ChevronDown, Building, Train, Map } from "lucide-react";
 import { FadeInSection, StaggerContainer, staggerItem } from "@/components/animations/ParallaxSection";
 import { LocalBusinessSchema, FAQSchema, SEOHead, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { SpeakableSchema, ItemListSchema } from "@/components/seo/WebsiteSchema";
@@ -11,6 +11,7 @@ import zonesInterventionFrance from "@/assets/zones-intervention-france.jpg";
 import salonMontage from "@/assets/salon-montage-lyon-professionnel.jpg";
 import { parisArrondissements } from "@/data/paris-arrondissements";
 import { parisBanlieue } from "@/data/paris-banlieue";
+import { grandesVilles, getRegionsUniques } from "@/data/grandes-villes";
 
 // Données des régions avec leurs spécificités
 const regions = [
@@ -665,7 +666,65 @@ export default function ZonesIntervention() {
         </div>
       </section>
 
-      {/* FAQ Régionales - Section SEO majeure */}
+      {/* GRANDES VILLES DE FRANCE */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <FadeInSection className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-sm font-medium text-primary uppercase tracking-widest mb-4 block">
+              <Map className="w-4 h-4 inline mr-2" />
+              48 Grandes Villes
+            </span>
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-card-foreground">
+              France <span className="text-gradient-gold">Métropolitaine</span>
+            </h2>
+            <p className="text-muted-foreground mt-4">
+              Couverture des 48 plus grandes villes de France. Lyon, Marseille, Toulouse, Bordeaux, Lille, Nantes et toutes les métropoles régionales.
+            </p>
+          </FadeInSection>
+
+          {/* Regroupement par région */}
+          {getRegionsUniques().map((regionName) => {
+            const villesRegion = grandesVilles.filter(v => v.region === regionName).slice(0, 6);
+            if (villesRegion.length === 0) return null;
+            
+            return (
+              <FadeInSection key={regionName} className="mb-12">
+                <h3 className="text-xl font-display font-bold text-card-foreground mb-6 flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-primary" />
+                  {regionName}
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                  {villesRegion.map((ville) => (
+                    <Link
+                      key={ville.id}
+                      to={`/ville/${ville.id}`}
+                      className="block bg-card border border-border rounded-lg p-4 hover:border-primary/50 hover:shadow-gold transition-all duration-300 group text-center"
+                    >
+                      <h4 className="font-display font-semibold text-card-foreground group-hover:text-primary transition-colors">
+                        {ville.nom}
+                      </h4>
+                      <p className="text-xs text-muted-foreground mt-1">{ville.departement}</p>
+                      {ville.siteExposition && (
+                        <p className="text-xs text-primary/70 mt-2 truncate">{ville.siteExposition}</p>
+                      )}
+                    </Link>
+                  ))}
+                </div>
+              </FadeInSection>
+            );
+          })}
+          
+          <FadeInSection className="text-center mt-8">
+            <Button variant="outline" asChild>
+              <Link to="/faq">
+                Voir toutes les questions par ville
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+            </Button>
+          </FadeInSection>
+        </div>
+      </section>
+
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <FadeInSection className="text-center max-w-3xl mx-auto mb-16">
