@@ -320,7 +320,7 @@ export default function VilleIntervention() {
         </div>
       </section>
 
-      {/* Services */}
+      {/* Services avec liens internes */}
       <section className="py-24 bg-muted">
         <div className="container mx-auto px-4">
           <FadeInSection className="text-center max-w-3xl mx-auto mb-16">
@@ -334,21 +334,36 @@ export default function VilleIntervention() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: "Montage de stands", desc: "Installation complète de votre stand d'exposition" },
-              { title: "Démontage", desc: "Démontage soigné et évacuation des matériaux" },
-              { title: "Logistique", desc: "Transport et stockage de vos équipements" },
-              { title: "Coordination", desc: "Gestion terrain et interface avec les organisateurs" },
+              { title: "Montage de stands", desc: "Installation complète de votre stand d'exposition", link: "/services/montage-demontage" },
+              { title: "Support technique", desc: "Assistance 24/7 pendant vos événements", link: "/services/support-technique" },
+              { title: "Logistique", desc: "Transport et stockage de vos équipements", link: "/services/logistique-coordination" },
+              { title: "Scénographie", desc: "Conception de décors sur mesure", link: "/services/scenographie-stands" },
             ].map((service, index) => (
               <FadeInSection key={service.title} delay={index * 0.1}>
-                <div className="bg-card border border-border rounded-lg p-6 h-full hover:border-primary/30 transition-colors">
-                  <h3 className="text-lg font-display font-semibold text-card-foreground mb-2">
+                <Link 
+                  to={service.link}
+                  className="block bg-card border border-border rounded-lg p-6 h-full hover:border-primary/30 hover:shadow-gold transition-all group"
+                >
+                  <h3 className="text-lg font-display font-semibold text-card-foreground mb-2 group-hover:text-primary transition-colors">
                     {service.title}
                   </h3>
                   <p className="text-sm text-muted-foreground">{service.desc}</p>
-                </div>
+                  <span className="text-primary text-sm mt-3 inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    En savoir plus <ArrowRight className="w-3 h-3" />
+                  </span>
+                </Link>
               </FadeInSection>
             ))}
           </div>
+
+          <FadeInSection className="text-center mt-12">
+            <Button variant="outline" asChild>
+              <Link to="/services">
+                Découvrir tous nos services
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+            </Button>
+          </FadeInSection>
         </div>
       </section>
 
@@ -386,6 +401,26 @@ export default function VilleIntervention() {
         </section>
       )}
 
+      {/* Lien vers réalisations */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <FadeInSection className="text-center max-w-3xl mx-auto">
+            <h2 className="text-2xl font-display font-bold text-card-foreground mb-4">
+              Nos réalisations
+            </h2>
+            <p className="text-muted-foreground mb-6">
+              Découvrez nos projets récents pour des clients prestigieux : LVMH, Google, Dior, G20...
+            </p>
+            <Button variant="outline" asChild>
+              <Link to="/realisations">
+                Voir nos réalisations
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+            </Button>
+          </FadeInSection>
+        </div>
+      </section>
+
       {/* Maillage interne - Villes de la région */}
       {villesProximite.length > 0 && (
         <section className="py-24 bg-muted">
@@ -405,6 +440,16 @@ export default function VilleIntervention() {
                   {v.nom}
                 </Link>
               ))}
+            </FadeInSection>
+
+            {/* Lien vers la page régionale */}
+            <FadeInSection className="text-center mt-8">
+              <Link 
+                to="/zones-intervention" 
+                className="text-primary hover:underline inline-flex items-center gap-1"
+              >
+                Voir toutes nos zones d'intervention <ChevronRight className="w-4 h-4" />
+              </Link>
             </FadeInSection>
           </div>
         </section>
