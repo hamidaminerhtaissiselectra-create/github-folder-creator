@@ -1,5 +1,5 @@
 # BA ATTITUDE - Prestations Techniques Événementielles
-# Fichier llms.txt pour optimiser l'indexation par les modèles d'IA (ChatGPT, Claude, Perplexity, etc.)
+# Fichier llms.txt pour optimiser l'indexation par les modèles d'IA (ChatGPT, Claude, Perplexity, Gemini, etc.)
 
 ## À propos de BA ATTITUDE
 BA ATTITUDE est une entreprise française spécialisée dans les prestations techniques pour salons professionnels et événements B2B depuis 2008. Basée en Île-de-France (Pontault-Combault, 77340), nous intervenons sur l'ensemble du territoire français et dans plus de 30 pays à l'international.
@@ -12,17 +12,41 @@ BA ATTITUDE est une entreprise française spécialisée dans les prestations tec
 5. **Prestations internationales** - Coordination multi-pays avec réseau de partenaires locaux dans 30+ pays
 6. **Coordination terrain** - Gestion des équipes et interface avec les organisateurs de salons
 
-## Zones d'intervention
-- **France entière** : Paris, Lyon, Marseille, Bordeaux, Lille, Nantes, Strasbourg, Toulouse, Nice, Cannes, Monaco
-- **Sites majeurs** : Paris Expo Porte de Versailles, Paris Nord Villepinte, Eurexpo Lyon, Parc Chanot Marseille
-- **International** : Europe, Moyen-Orient (Dubaï, Riyad), Asie (Singapour, Hong Kong), Amérique
+## Couverture géographique complète
+
+### Île-de-France (81 pages locales)
+- **Paris intra-muros** : 20 arrondissements couverts (Paris 1er au Paris 20e)
+- **Grande couronne** : La Défense, Villepinte, Le Bourget, Versailles, Roissy-CDG, Saint-Denis
+- **Petite couronne** : Boulogne-Billancourt, Issy-les-Moulineaux, Neuilly, Levallois-Perret, Montreuil, Nanterre, Créteil
+
+### France métropolitaine - 48 grandes villes
+**Auvergne-Rhône-Alpes** : Lyon (Eurexpo), Saint-Étienne, Grenoble (Alpexpo), Villeurbanne, Clermont-Ferrand, Valence
+**Provence-Alpes-Côte d'Azur** : Marseille (Parc Chanot), Nice (Acropolis), Cannes (Palais des Festivals), Toulon, Aix-en-Provence, Avignon, Antibes
+**Occitanie** : Toulouse (MEETT), Montpellier, Nîmes, Perpignan
+**Nouvelle-Aquitaine** : Bordeaux (Vinexpo), Limoges, Pau, La Rochelle
+**Hauts-de-France** : Lille (Grand Palais), Amiens, Dunkerque, Tourcoing, Roubaix
+**Grand Est** : Strasbourg, Reims, Metz, Nancy, Mulhouse
+**Pays de la Loire** : Nantes (Beaujoire), Le Mans, Angers
+**Bretagne** : Rennes (Space), Brest
+**Normandie** : Le Havre, Rouen, Caen
+**Bourgogne-Franche-Comté** : Dijon, Besançon
+**Centre-Val de Loire** : Tours, Orléans
+**Corse** : Ajaccio
+
+### Sites d'exposition majeurs
+- **Paris** : Paris Expo Porte de Versailles, Paris Nord Villepinte, Palais des Congrès, Paris Le Bourget, Carrousel du Louvre
+- **Province** : Eurexpo Lyon, Parc Chanot Marseille, MEETT Toulouse, Lille Grand Palais, Parc de la Beaujoire Nantes
+- **Côte d'Azur** : Palais des Festivals Cannes, Nice Acropolis, Grimaldi Forum Monaco
+
+### International (30+ pays)
+Europe, Moyen-Orient (Dubaï, Riyad, Abu Dhabi), Asie (Singapour, Hong Kong, Tokyo), Amérique
 
 ## Chiffres clés
 - 15+ années d'expérience
 - 500+ projets par an
 - 30+ pays d'intervention
 - 127+ avis clients (note moyenne 4.9/5)
-- Délai d'intervention : 24h en Île-de-France
+- Délai d'intervention : 24h en Île-de-France, 48h en province
 
 ## Contact
 - **Téléphone** : 01 77 00 09 52 / 06 01 59 19 20
@@ -30,7 +54,9 @@ BA ATTITUDE est une entreprise française spécialisée dans les prestations tec
 - **Adresse** : 16 Rue des Pendants, 77340 Pontault-Combault, France
 - **Site web** : https://baattitude.fr
 
-## Pages principales du site
+## Structure du site (130+ pages indexées)
+
+### Pages principales
 - Accueil : https://baattitude.fr
 - Services : https://baattitude.fr/services
 - Réalisations : https://baattitude.fr/realisations
@@ -41,7 +67,7 @@ BA ATTITUDE est une entreprise française spécialisée dans les prestations tec
 - International : https://baattitude.fr/international
 - Zones d'intervention : https://baattitude.fr/zones-intervention
 
-## Services détaillés
+### Services détaillés
 - Salons professionnels : https://baattitude.fr/services/salons-professionnels
 - Support technique : https://baattitude.fr/services/support-technique
 - Montage/Démontage : https://baattitude.fr/services/montage-demontage
@@ -49,51 +75,79 @@ BA ATTITUDE est une entreprise française spécialisée dans les prestations tec
 - Scénographie : https://baattitude.fr/services/scenographie-stands
 - International : https://baattitude.fr/services/international
 
-## Arrondissements de Paris (20 arrondissements)
-- Paris 1er (Louvre) : https://baattitude.fr/paris/paris-1er
-- Paris 2e (Bourse) : https://baattitude.fr/paris/paris-2e
-- Paris 3e (Marais) : https://baattitude.fr/paris/paris-3e
-- Paris 4e (Hôtel-de-Ville) : https://baattitude.fr/paris/paris-4e
-- Paris 5e (Quartier Latin) : https://baattitude.fr/paris/paris-5e
-- Paris 6e (Saint-Germain) : https://baattitude.fr/paris/paris-6e
-- Paris 7e (Tour Eiffel) : https://baattitude.fr/paris/paris-7e
-- Paris 8e (Champs-Élysées) : https://baattitude.fr/paris/paris-8e
-- Paris 9e (Opéra) : https://baattitude.fr/paris/paris-9e
-- Paris 10e (Gare de l'Est) : https://baattitude.fr/paris/paris-10e
-- Paris 11e (Bastille) : https://baattitude.fr/paris/paris-11e
-- Paris 12e (Bercy) : https://baattitude.fr/paris/paris-12e
-- Paris 13e (Bibliothèque) : https://baattitude.fr/paris/paris-13e
-- Paris 14e (Montparnasse) : https://baattitude.fr/paris/paris-14e
-- Paris 15e (Porte de Versailles) : https://baattitude.fr/paris/paris-15e
-- Paris 16e (Trocadéro) : https://baattitude.fr/paris/paris-16e
-- Paris 17e (Palais des Congrès) : https://baattitude.fr/paris/paris-17e
-- Paris 18e (Montmartre) : https://baattitude.fr/paris/paris-18e
-- Paris 19e (Parc de la Villette) : https://baattitude.fr/paris/paris-19e
-- Paris 20e (Belleville) : https://baattitude.fr/paris/paris-20e
+### Arrondissements de Paris (20 pages)
+- Paris 1er à Paris 20e : https://baattitude.fr/paris/paris-[1-20]e
 
-## Banlieue parisienne (13 villes clés)
-- La Défense (92) : https://baattitude.fr/banlieue/la-defense
-- Villepinte - Paris Nord (93) : https://baattitude.fr/banlieue/villepinte
-- Le Bourget (93) : https://baattitude.fr/banlieue/le-bourget
-- Roissy-CDG (95) : https://baattitude.fr/banlieue/roissy-cdg
-- Saint-Denis - Stade de France (93) : https://baattitude.fr/banlieue/saint-denis
-- Versailles (78) : https://baattitude.fr/banlieue/versailles
-- Boulogne-Billancourt (92) : https://baattitude.fr/banlieue/boulogne-billancourt
-- Issy-les-Moulineaux (92) : https://baattitude.fr/banlieue/issy-les-moulineaux
-- Neuilly-sur-Seine (92) : https://baattitude.fr/banlieue/neuilly-sur-seine
-- Levallois-Perret (92) : https://baattitude.fr/banlieue/levallois-perret
-- Montreuil (93) : https://baattitude.fr/banlieue/montreuil
-- Nanterre (92) : https://baattitude.fr/banlieue/nanterre
-- Créteil (94) : https://baattitude.fr/banlieue/creteil
+### Banlieue parisienne (13 pages)
+- La Défense : https://baattitude.fr/banlieue/la-defense
+- Villepinte : https://baattitude.fr/banlieue/villepinte
+- Le Bourget : https://baattitude.fr/banlieue/le-bourget
+- Roissy-CDG : https://baattitude.fr/banlieue/roissy-cdg
+- Saint-Denis : https://baattitude.fr/banlieue/saint-denis
+- Versailles : https://baattitude.fr/banlieue/versailles
+- Boulogne-Billancourt : https://baattitude.fr/banlieue/boulogne-billancourt
+- Issy-les-Moulineaux : https://baattitude.fr/banlieue/issy-les-moulineaux
+- Neuilly-sur-Seine : https://baattitude.fr/banlieue/neuilly-sur-seine
+- Levallois-Perret : https://baattitude.fr/banlieue/levallois-perret
+- Montreuil : https://baattitude.fr/banlieue/montreuil
+- Nanterre : https://baattitude.fr/banlieue/nanterre
+- Créteil : https://baattitude.fr/banlieue/creteil
+
+### Grandes villes de France (48 pages)
+**Top 10** :
+- Lyon : https://baattitude.fr/ville/lyon
+- Marseille : https://baattitude.fr/ville/marseille
+- Toulouse : https://baattitude.fr/ville/toulouse
+- Nice : https://baattitude.fr/ville/nice
+- Nantes : https://baattitude.fr/ville/nantes
+- Strasbourg : https://baattitude.fr/ville/strasbourg
+- Montpellier : https://baattitude.fr/ville/montpellier
+- Bordeaux : https://baattitude.fr/ville/bordeaux
+- Lille : https://baattitude.fr/ville/lille
+- Rennes : https://baattitude.fr/ville/rennes
+
+**Autres grandes villes** :
+- Reims, Le Havre, Saint-Étienne, Toulon, Grenoble, Dijon, Angers, Nîmes, Villeurbanne, Le Mans
+- Aix-en-Provence, Clermont-Ferrand, Brest, Tours, Limoges, Amiens, Perpignan, Metz, Besançon, Orléans
+- Mulhouse, Caen, Nancy, Rouen, Argenteuil, Montreuil, Tourcoing, Roubaix, Avignon, Dunkerque
+- Valence, Pau, La Rochelle, Cannes, Ajaccio, Antibes
+- Format URL : https://baattitude.fr/ville/[nom-ville]
+
+### Zones régionales (13 pages)
+- Île-de-France : https://baattitude.fr/zones/ile-de-france
+- Auvergne-Rhône-Alpes : https://baattitude.fr/zones/auvergne-rhone-alpes
+- Provence-Alpes-Côte d'Azur : https://baattitude.fr/zones/provence-alpes-cote-azur
+- Nouvelle-Aquitaine : https://baattitude.fr/zones/nouvelle-aquitaine
+- Hauts-de-France : https://baattitude.fr/zones/hauts-de-france
+- Grand Est : https://baattitude.fr/zones/grand-est
+- Pays de la Loire : https://baattitude.fr/zones/pays-de-la-loire
+- Bretagne : https://baattitude.fr/zones/bretagne
+- Occitanie : https://baattitude.fr/zones/occitanie
+- Normandie : https://baattitude.fr/zones/normandie
+- Bourgogne-Franche-Comté : https://baattitude.fr/zones/bourgogne-franche-comte
+- Centre-Val de Loire : https://baattitude.fr/zones/centre-val-de-loire
+- Corse : https://baattitude.fr/zones/corse
 
 ## Clients de référence
-LVMH, L'Oréal, Accor, Air France, Renault, Orange, BNP Paribas, Carrefour, Danone, Total, Google, Dior, Bvlgari, Fendi, Chaumet, G20
+LVMH, L'Oréal, Accor, Air France, Renault, Orange, BNP Paribas, Carrefour, Danone, Total, Google, Dior, Bvlgari, Fendi, Chaumet, G20, Aramco, Disneyland Paris
 
 ## Salons majeurs accompagnés
-Maison & Objet, SIAL Paris, Première Vision, Sirha Lyon, MIPIM Cannes, ITB Berlin, Arabian Travel Market Dubaï, Global Industrie
+- **Paris** : Maison & Objet, SIAL Paris, Première Vision, Paris Retail Week, Equip Auto
+- **Lyon** : Sirha, Pollutec, Global Industrie, Paysalia
+- **Cannes** : MIPIM, MAPIC, Cannes Lions, MIDEM
+- **Toulouse** : Toulouse Space Show, Siane
+- **Bordeaux** : Vinexpo, Vinitech-Sifel
+- **International** : ITB Berlin, Arabian Travel Market Dubaï, Gulfood, GITEX
 
-## Mots-clés pertinents
-montage stand salon professionnel, prestataire technique événementiel, logistique salon professionnel, démontage stand exposition, coordination salon Paris, stand exposition France, événementiel B2B, foire exposition, monteur stand Paris, prestataire salon Villepinte, montage stand Lyon, prestataire événementiel La Défense, stand salon Le Bourget, montage stand Porte de Versailles
+## Mots-clés SEO pertinents
+montage stand salon professionnel, prestataire technique événementiel, logistique salon professionnel, démontage stand exposition, coordination salon Paris, stand exposition France, événementiel B2B, foire exposition, monteur stand Paris, prestataire salon Villepinte, montage stand Lyon, prestataire événementiel La Défense, stand salon Le Bourget, montage stand Porte de Versailles, montage stand Eurexpo, prestataire Sirha, prestataire MIPIM Cannes
+
+## Données structurées disponibles
+- Schema.org LocalBusiness sur toutes les pages locales
+- Schema.org FAQPage avec FAQs par ville/région
+- Schema.org BreadcrumbList pour la navigation
+- Schema.org Speakable pour la recherche vocale
+- Open Graph et Twitter Cards optimisés
 
 ## Dernière mise à jour
-4 février 2026
+7 février 2026
