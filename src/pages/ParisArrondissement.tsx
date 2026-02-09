@@ -347,7 +347,7 @@ export default function ParisArrondissement() {
         </div>
       </ParallaxSection>
 
-      {/* Services */}
+      {/* Services avec liens internes */}
       <section className="py-24 bg-muted">
         <div className="container mx-auto px-4">
           <FadeInSection className="text-center max-w-3xl mx-auto mb-16">
@@ -361,22 +361,56 @@ export default function ParisArrondissement() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: "Montage de stands", desc: `Installation complète de votre stand dans le ${arrondissement.name}`, icon: Building2 },
-              { title: "Démontage", desc: "Démontage soigné et évacuation rapide des matériaux", icon: Navigation },
-              { title: "Logistique", desc: "Transport, stockage et manutention de vos équipements", icon: Globe },
-              { title: "Coordination", desc: "Gestion terrain et interface avec les organisateurs", icon: Users },
+              { title: "Montage de stands", desc: `Installation complète de votre stand dans le ${arrondissement.name}`, link: "/services/montage-demontage" },
+              { title: "Support technique", desc: "Assistance 24/7 pendant vos événements", link: "/services/support-technique" },
+              { title: "Logistique", desc: "Transport, stockage et manutention de vos équipements", link: "/services/logistique-coordination" },
+              { title: "Scénographie", desc: "Conception de décors sur mesure", link: "/services/scenographie-stands" },
             ].map((service, index) => (
               <FadeInSection key={service.title} delay={index * 0.1}>
-                <div className="bg-card border border-border rounded-lg p-6 h-full hover:border-primary/30 transition-colors">
-                  <service.icon className="w-8 h-8 text-primary mb-4" />
-                  <h3 className="text-lg font-display font-semibold text-card-foreground mb-2">
+                <Link 
+                  to={service.link}
+                  className="block bg-card border border-border rounded-lg p-6 h-full hover:border-primary/30 hover:shadow-gold transition-all group"
+                >
+                  <h3 className="text-lg font-display font-semibold text-card-foreground mb-2 group-hover:text-primary transition-colors">
                     {service.title}
                   </h3>
                   <p className="text-sm text-muted-foreground">{service.desc}</p>
-                </div>
+                  <span className="text-primary text-sm mt-3 inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    En savoir plus <ArrowRight className="w-3 h-3" />
+                  </span>
+                </Link>
               </FadeInSection>
             ))}
           </div>
+
+          <FadeInSection className="text-center mt-12">
+            <Button variant="outline" asChild>
+              <Link to="/services">
+                Découvrir tous nos services
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+            </Button>
+          </FadeInSection>
+        </div>
+      </section>
+
+      {/* Lien vers réalisations */}
+      <section className="py-16 bg-background border-b border-border">
+        <div className="container mx-auto px-4">
+          <FadeInSection className="text-center max-w-3xl mx-auto">
+            <h2 className="text-2xl font-display font-bold text-card-foreground mb-4">
+              Nos réalisations
+            </h2>
+            <p className="text-muted-foreground mb-6">
+              Découvrez nos projets récents pour des clients prestigieux : LVMH, Google, Dior, G20...
+            </p>
+            <Button variant="outline" asChild>
+              <Link to="/realisations">
+                Voir nos réalisations
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+            </Button>
+          </FadeInSection>
         </div>
       </section>
 

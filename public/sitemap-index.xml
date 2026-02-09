@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Sitemap principal - Pages core du site -->
+  <sitemap>
+    <loc>https://baattitude.fr/sitemap.xml</loc>
+    <lastmod>2026-02-09</lastmod>
+  </sitemap>
+  
+  <!-- Sitemap des images -->
+  <sitemap>
+    <loc>https://baattitude.fr/sitemap-images.xml</loc>
+    <lastmod>2026-02-09</lastmod>
+  </sitemap>
+  
+  <!-- Sitemap des pages locales (81 villes) -->
+  <sitemap>
+    <loc>https://baattitude.fr/sitemap-villes.xml</loc>
+    <lastmod>2026-02-09</lastmod>
+  </sitemap>
+  
+</sitemapindex>
