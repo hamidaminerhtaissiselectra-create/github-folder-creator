@@ -382,6 +382,15 @@ export default function ZonesIntervention() {
           description: r.description
         }))}
       />
+      <ItemListSchema 
+        name="Grandes villes d'intervention BA ATTITUDE"
+        description="Les 48 principales villes de France où BA ATTITUDE intervient pour le montage de stands et la logistique événementielle"
+        items={grandesVilles.map(v => ({
+          name: `Montage de stands ${v.nom}`,
+          url: `https://baattitude.fr/ville/${v.id}`,
+          description: `Services de montage et démontage de stands à ${v.nom} (${v.departement}) - ${v.region}`
+        }))}
+      />
       <SpeakableSchema 
         cssSelector={[
           "h1",

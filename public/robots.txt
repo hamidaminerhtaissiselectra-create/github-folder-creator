@@ -118,8 +118,13 @@ Disallow: /*.json$
 # SITEMAPS & AI FILES
 # ===========================================
 
+# Sitemap index principal
+Sitemap: https://baattitude.fr/sitemap-index.xml
+
+# Sitemaps individuels
 Sitemap: https://baattitude.fr/sitemap.xml
 Sitemap: https://baattitude.fr/sitemap-images.xml
+Sitemap: https://baattitude.fr/sitemap-villes.xml
 
 # LLMs.txt for AI crawlers
 # https://baattitude.fr/llms.txt
